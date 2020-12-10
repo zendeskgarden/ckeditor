@@ -15,7 +15,7 @@ const theme = {
 
 export const managerTheme = create({
   brandTitle: 'CKEditor / Zendesk Garden',
-  brandUrl: 'https://zendeskgarden.github.io/react-components/storybook',
+  brandUrl: 'https://zendeskgarden.github.io/ckeditor',
   brandImage: './garden.svg',
   ...theme
 });
