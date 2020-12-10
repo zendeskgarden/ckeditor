@@ -12,7 +12,7 @@
   "scripts": {
     "build:storybook": "build-storybook -s .storybook/public",
     "format": "prettier-package-json --write && yarn format:all --write",
-    "format:all": "prettier --loglevel warn '**/*.{js,ts,json,md}' '!CHANGELOG.md' '!dist/**'",
+    "format:all": "prettier --loglevel warn '**/*.{js,ts,json,md}' '.storybook/**/*.{js,ts,json,md}' '!CHANGELOG.md' '!dist/**'",
     "lint": "yarn lint:js && yarn lint:md",
     "lint:js": "eslint src/ .storybook/ --ext js,ts --max-warnings 0",
     "lint:md": "markdownlint README.md src/**/*.md",
