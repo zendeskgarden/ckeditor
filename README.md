@@ -9,7 +9,7 @@
 [dependency status badge]: https://flat.badgen.net/david/dev/zendeskgarden/ckeditor?label=dependencies
 [dependency status link]: https://david-dm.org/zendeskgarden/ckeditor?type=dev
 
-> :seedling: Garden is a design system for Zendesk
+> :seedling: Garden is the design system by Zendesk
 
 TODO...
 
