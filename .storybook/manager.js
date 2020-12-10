@@ -5,4 +5,9 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-/* TODO */
+import { addons } from '@storybook/addons';
+import { managerTheme } from './gardenTheme';
+
+addons.setConfig({
+  theme: managerTheme
+});

@@ -36,6 +36,14 @@ jobs:
       - *attach_workspace
       - run: yarn test
 
+  deploy:
+    <<: *executor
+    environment:
+      NODE_DEBUG: gh-pages
+    steps:
+      - run: yarn build:storybook --no-dll
+      - run: utils/deploy.js
+
   publish:
     <<: *executor
     steps:
@@ -52,6 +60,10 @@ workflows:
           requires:
             - build
           <<: *filters_tags
+      - deploy:
+          requires:
+            - test
+          context: writer
       - publish:
           requires:
             - test
