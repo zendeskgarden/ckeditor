@@ -2,7 +2,7 @@
 
 Keen to contribute to Garden? We're stoked to have you join us. You may
 find that opening an
-[issue](https://github.com/zendeskgarden/template/issues) is the
+[issue](https://github.com/zendeskgarden/ckeditor/issues) is the
 best way to get a conversation started. When you're ready to submit a
 pull request, follow the [steps](#pull-request-workflow) below. We
 follow a [code of conduct](CODE_OF_CONDUCT.md) as our guide for
