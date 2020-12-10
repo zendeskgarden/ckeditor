@@ -1,12 +1,12 @@
 {
-  "name": "@zendeskgarden/template",
-  "description": "Garden Template",
+  "name": "@zendeskgarden/ckeditor",
+  "description": "Garden RTE",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
   "homepage": "https://garden.zendesk.com/",
-  "repository": "https://github.com/zendeskgarden/template",
+  "repository": "https://github.com/zendeskgarden/ckeditor",
   "bugs": {
-    "url": "https://github.com/zendeskgarden/template/issues"
+    "url": "https://github.com/zendeskgarden/ckeditor/issues"
   },
   "version": "0.0.0",
   "main": "src/index.js",
@@ -22,20 +22,22 @@
     "test": "prettier-package-json --list-different && yarn format:all --check && yarn lint"
   },
   "devDependencies": {
-    "@zendeskgarden/eslint-config": "13.0.0",
-    "@zendeskgarden/scripts": "0.1.10",
+    "@zendeskgarden/eslint-config": "15.0.0",
+    "@zendeskgarden/scripts": "0.1.11",
     "babel-eslint": "10.1.0",
-    "eslint": "7.2.0",
+    "eslint": "7.10.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-notice": "0.9.10",
-    "husky": "4.2.5",
-    "markdownlint-cli": "0.23.1",
-    "prettier": "2.0.5",
+    "husky": "4.3.0",
+    "markdownlint-cli": "0.25.0",
+    "prettier": "2.1.2",
     "prettier-package-json": "2.1.3",
-    "standard-version": "8.0.0"
+    "standard-version": "9.0.0"
   },
   "keywords": [
+    "ckeditor",
     "garden",
+    "rte",
     "zendesk"
   ],
   "publishConfig": {
