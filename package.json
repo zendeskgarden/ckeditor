@@ -34,7 +34,7 @@
     "@storybook/addon-essentials": "6.1.10",
     "@storybook/addon-links": "6.1.10",
     "@storybook/react": "6.1.10",
-    "@zendeskgarden/eslint-config": "17.0.0",
+    "@zendeskgarden/eslint-config": "17.1.0",
     "@zendeskgarden/react-theming": "8.28.1",
     "@zendeskgarden/scripts": "0.1.11",
     "babel-eslint": "10.1.0",
