@@ -197,3 +197,8 @@
 .ck.ck-editor__editable .ck-code_selected {
   background-color: #d8dcde; /* GREY-300 */
 }
+
+/* LINKS */
+.ck .ck-link_selected {
+  border-radius: 2px;
+}
