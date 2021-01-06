@@ -112,7 +112,7 @@
 .ck-content h1 {
   line-height: 32px;
   font-size: 26px; /* XXL */
-  font-weight: 400;
+  font-weight: 600;
   margin-block-start: 8px;
   margin-block-end: 8px;
 }
@@ -120,7 +120,7 @@
 .ck-content h2 {
   line-height: 28px;
   font-size: 22px; /* XL */
-  font-weight: 400;
+  font-weight: 600;
   margin-block-start: 8px;
   margin-block-end: 8px;
 }
@@ -128,7 +128,7 @@
 .ck-content h3 {
   line-height: 24px;
   font-size: 18px; /* LG */
-  font-weight: 400;
+  font-weight: 600;
   margin-block-start: 8px;
   margin-block-end: 8px;
 }
@@ -136,7 +136,7 @@
 .ck-content h4 {
   line-height: 20px;
   font-size: 14px; /* MD */
-  font-weight: 400;
+  font-weight: 600;
   margin-block-start: 8px;
   margin-block-end: 8px;
 }
