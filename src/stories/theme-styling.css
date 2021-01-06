@@ -1,0 +1,199 @@
+:root {
+  /* FONTS */
+  --ck-font-face: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, Arial, sans-serif;
+  --ck-font-size-base: 14px;
+  --ck-line-height-base: 1.84615;
+  --ck-font-size-tiny: 10px;
+  --ck-font-size-small: 12px;
+  --ck-font-size-normal: 14px;
+  --ck-font-size-big: 18px;
+  --ck-font-size-large: 22px;
+
+  /* COLORS */
+  --ck-color-base-background: #ffffff; /* WHITE */
+  --ck-color-base-foreground: #ffffff; /* WHITE */
+  --ck-color-base-border: #d8dcde; /* GREY-300 */
+  --ck-color-base-action: #038153; /* GREEN-600 */
+  --ck-color-base-focus: #1f73b7; /* BLUE-600 */
+  --ck-color-base-text: #2f3941; /* GREY-800  */
+  --ck-color-base-error: #cc3340; /* RED-600 */
+
+  /* SPACING */
+  --ck-spacing-unit: 4px;
+  --ck-spacing-extra-large: calc(var(--ck-spacing-unit) * 4);
+  --ck-spacing-large: calc(var(--ck-spacing-unit) * 3);
+  --ck-spacing-standard: calc(var(--ck-spacing-unit) * 2);
+  --ck-spacing-medium: var(--ck-spacing-unit);
+  --ck-spacing-small: calc(var(--ck-spacing-unit) * 0.5);
+  --ck-spacing-tiny: calc(var(--ck-spacing-unit) * 0.25);
+  --ck-spacing-extra-tiny: calc(var(--ck-spacing-unit) * 0.25);
+
+  /* BORDERS */
+  --ck-border-radius: var(--ck-spacing-unit);
+
+  /* ICONS */
+  --ck-icon-size: var(--ck-spacing-extra-large);
+
+  /* TOOLTIPS */
+  --ck-color-tooltip-background: #03363d; /* KALE-700 */
+  --ck-color-tooltip-text: var(--ck-color-base-background);
+
+  /* SHADOWS */
+  --ck-color-shadow-drop: rgba(23, 73, 77, 0.15); /* CHROME-600 */
+  --ck-inner-shadow: rgba(31, 115, 183, 0.35) 0px 0px 0px 3px inset; /* INSET-FOCUS value */
+  --ck-drop-shadow: var(--ck-color-shadow-drop) 0px 20px 30px 0px;
+
+  /* WIDGET */
+  --ck-color-widget-hover-border: #fed6a8; /* YELLOW-300 */
+
+  /* BUTTONS */
+  --ck-color-button-default-background: transparent;
+  --ck-color-button-default-hover-background: rgba(31, 115, 183, 0.08);
+  --ck-color-button-default-active-background: rgba(31, 115, 183, 0.2);
+  --ck-color-button-default-active-shadow: transparent; /* TODO NEEDS WORK */
+  --ck-color-button-default-disabled-background: #d8dcde; /* GREY-300 */
+
+  --ck-color-button-on-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-hover-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-active-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-active-shadow: transparent; /* TODO NEEDS WORK */
+  --ck-color-button-on-disabled-background: var(--ck-color-button-default-disabled-background);
+
+  /* DROPDOWNS */
+  --ck-dropdown-arrow-size: var(--ck-spacing-extra-large);
+}
+
+/* BUTTONS */
+.ck.ck-button:not(.ck-disabled):hover .ck-button__icon {
+  color: #49545c; /* GREY-700 */
+}
+
+.ck.ck-button:not(.ck-disabled) {
+  cursor: pointer;
+}
+
+/* GLOBAL EDITOR */
+.ck.ck-editor__editable_inline {
+  padding: 0 var(--ck-spacing-large);
+}
+
+/* PANELS */
+.ck.ck-balloon-panel {
+  box-shadow: var(--ck-drop-shadow);
+}
+
+/* TOOLBAR */
+.ck.ck-toolbar__separator {
+  margin-right: var(--ck-spacing-standard) !important;
+  margin-left: var(--ck-spacing-standard) !important;
+}
+
+/* HORIZONTAL LINE */
+.ck-content hr {
+  margin: var(--ck-spacing-standard) 0;
+}
+
+/* Blockquote */
+.ck-content blockquote {
+  overflow: hidden;
+  padding: 0 0 0 calc(var(--ck-spacing-standard) * 4);
+  font-style: inherit;
+  border-left: 2px solid #c2c8cc; /* GREY-400 */
+}
+
+.ck-content[dir='rtl'] blockquote {
+  padding: 0 calc(var(--ck-spacing-standard) * 4) 0 0;
+  border-left: 0;
+  border-right: 2px solid #c2c8cc; /* GREY-400 */
+}
+
+/* TYPOGRAPHY */
+.ck-content h1 {
+  line-height: 32px;
+  font-size: 26px; /* XXL */
+  font-weight: 400;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+
+.ck-content h2 {
+  line-height: 28px;
+  font-size: 22px; /* XL */
+  font-weight: 400;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+
+.ck-content h3 {
+  line-height: 24px;
+  font-size: 18px; /* LG */
+  font-weight: 400;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+
+.ck-content h4 {
+  line-height: 20px;
+  font-size: 14px; /* MD */
+  font-weight: 400;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+
+.ck-content p {
+  margin-bottom: 20px;
+}
+
+.ck-content strong {
+  font-weight: 600;
+}
+
+.ck-content u {
+  text-decoration: underline;
+}
+
+/* BLOCKQUOTE */
+.ck-content blockquote {
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+}
+
+.ck-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.ck-content pre {
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+}
+
+/* LISTS */
+.ck-content ul {
+  margin: 20px 0px 20px 24px;
+  padding: 0;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+.ck-content ol {
+  margin: 0px 0px 0px 24px;
+  padding: 0;
+  list-style-position: outside;
+  list-style-type: decimal;
+}
+
+/* CODE */
+.ck-content code {
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: calc(1em - 1px);
+  direction: ltr;
+  border-radius: 2px;
+  padding: 1.5px;
+  background-color: rgb(233, 235, 237); /* GREY-200 */
+  color: rgb(73, 84, 92);
+}
+
+.ck.ck-editor__editable .ck-code_selected {
+  background-color: #d8dcde; /* GREY-300 */
+}
