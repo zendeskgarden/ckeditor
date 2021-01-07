@@ -35,6 +35,10 @@ module.exports.iconPlugins = [
     require.resolve('@zendeskgarden/svg-icons/src/16/link-stroke.svg')
   ),
   new webpack.NormalModuleReplacementPlugin(
+    /unlink\.svg/,
+    require.resolve('@zendeskgarden/svg-icons/src/16/link-remove-stroke.svg')
+  ),
+  new webpack.NormalModuleReplacementPlugin(
     /pencil\.svg/,
     require.resolve('@zendeskgarden/svg-icons/src/16/pencil-stroke.svg')
   ),

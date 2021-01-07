@@ -1,0 +1,4 @@
+.ck.ck-toolbar__separator {
+  margin-right: var(--ck-spacing-standard) !important;
+  margin-left: var(--ck-spacing-standard) !important;
+}

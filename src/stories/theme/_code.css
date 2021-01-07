@@ -1,0 +1,13 @@
+.ck-content code {
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: calc(1em - 1px);
+  direction: ltr;
+  border-radius: 2px;
+  padding: 1.5px;
+  background-color: rgb(233, 235, 237); /* GREY-200 */
+  color: rgb(73, 84, 92);
+}
+
+.ck.ck-editor__editable .ck-code_selected {
+  background-color: #d8dcde; /* GREY-300 */
+}

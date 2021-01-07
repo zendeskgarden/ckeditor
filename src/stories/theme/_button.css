@@ -1,0 +1,7 @@
+.ck.ck-button:not(.ck-disabled):hover .ck-button__icon {
+  color: #49545c; /* GREY-700 */
+}
+
+.ck.ck-button:not(.ck-disabled) {
+  cursor: pointer;
+}

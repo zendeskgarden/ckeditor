@@ -32,7 +32,7 @@ import { add } from '@ckeditor/ckeditor5-utils/src/translation-service';
 import { getEnvKeystrokeText } from '@ckeditor/ckeditor5-utils/src/keyboard';
 
 // import GardenEditor from '../gardeneditor';
-import './theme-styling.css';
+import './theme/styles.css';
 import { INITIAL_DATA } from './initialData';
 
 const EDITOR_LOCAL_STORAGE_KEY = 'ckeditor5-demo-1';
