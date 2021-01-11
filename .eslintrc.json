@@ -1,23 +1,12 @@
 {
   "extends": [
     "@zendeskgarden",
-    "@zendeskgarden/eslint-config/plugins/notice.js",
-    "plugin:react/recommended",
-    "prettier"
+    "@zendeskgarden/eslint-config/plugins/notice",
+    "@zendeskgarden/eslint-config/plugins/react",
+    "prettier",
+    "prettier/react"
   ],
-  "settings": {
-    "reacts": {
-      "version": "detect"
-    }
-  },
   "rules": {
-    "max-len": [
-      "error",
-      {
-        "code": 100,
-        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$"
-      }
-    ],
     "sort-imports": [
       "error",
       {
