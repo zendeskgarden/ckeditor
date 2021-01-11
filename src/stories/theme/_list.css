@@ -1,8 +1,15 @@
 .ck-content ul {
-  margin: 16px 0px 16px 20px;
+  margin: 16px 0 16px 20px;
   padding: 0;
   list-style-position: outside;
   list-style-type: disc;
+}
+
+.ck-content ol {
+  margin: 16px 0 16px 20px;
+  padding: 0;
+  list-style-position: outside;
+  list-style-type: decimal;
 }
 
 .ck-content ul ul {
@@ -13,13 +20,6 @@
 .ck-content ul ol {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.ck-content ol {
-  margin: 16px 0px 16px 20px;
-  padding: 0;
-  list-style-position: outside;
-  list-style-type: decimal;
 }
 
 .ck-content ol ol {

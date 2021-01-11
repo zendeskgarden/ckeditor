@@ -1,5 +1,5 @@
 .ck.ck-tooltip .ck-tooltip__text {
   border-radius: 2px;
+  padding: 0 1em;
   font-size: var(--ck-font-size-small);
-  padding: 0px 1em;
 }

@@ -1,7 +1,9 @@
+/* stylelint-disable custom-property-pattern, color-function-notation, max-line-length */
+
 :root {
   /* FONTS */
-  --ck-font-face: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, Helvetica Neue, Arial, sans-serif;
+  /* stylelint-disable-next-line value-keyword-case */
+  --ck-font-face: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, sans-serif;
   --ck-font-size-base: 14px;
   --ck-line-height-base: 1.84615;
   --ck-font-size-tiny: 10px;
@@ -11,8 +13,8 @@
   --ck-font-size-large: 22px;
 
   /* COLORS */
-  --ck-color-base-background: #ffffff; /* WHITE */
-  --ck-color-base-foreground: #ffffff; /* WHITE */
+  --ck-color-base-background: #fff; /* WHITE */
+  --ck-color-base-foreground: #fff; /* WHITE */
   --ck-color-base-border: #d8dcde; /* GREY-300 */
   --ck-color-base-action: #038153; /* GREEN-600 */
   --ck-color-base-focus: #1f73b7; /* BLUE-600 */
@@ -25,9 +27,9 @@
   --ck-spacing-large: calc(var(--ck-spacing-unit) * 3);
   --ck-spacing-standard: calc(var(--ck-spacing-unit) * 2);
   --ck-spacing-medium: var(--ck-spacing-unit);
-  --ck-spacing-small: calc(var(--ck-spacing-unit) * 0.5);
-  --ck-spacing-tiny: calc(var(--ck-spacing-unit) * 0.25);
-  --ck-spacing-extra-tiny: calc(var(--ck-spacing-unit) * 0.25);
+  --ck-spacing-small: calc(var(--ck-spacing-unit) * .5);
+  --ck-spacing-tiny: calc(var(--ck-spacing-unit) * .25);
+  --ck-spacing-extra-tiny: calc(var(--ck-spacing-unit) * .25);
 
   /* BORDERS */
   --ck-border-radius: var(--ck-spacing-unit);
@@ -40,20 +42,19 @@
   --ck-color-tooltip-text: var(--ck-color-base-background);
 
   /* SHADOWS */
-  --ck-color-shadow-drop: rgba(23, 73, 77, 0.15); /* CHROME-600 */
-  --ck-inner-shadow: rgba(31, 115, 183, 0.35) 0px 0px 0px 3px inset; /* INSET-FOCUS value */
-  --ck-drop-shadow: var(--ck-color-shadow-drop) 0px 20px 30px 0px;
+  --ck-color-shadow-drop: rgba(23, 73, 77, .15); /* CHROME-600 */
+  --ck-inner-shadow: rgba(31, 115, 183, .35) 0 0 0 3px inset; /* INSET-FOCUS */
+  --ck-drop-shadow: var(--ck-color-shadow-drop) 0 20px 30px 0;
 
   /* WIDGET */
   --ck-color-widget-hover-border: #fed6a8; /* YELLOW-300 */
 
   /* BUTTONS */
   --ck-color-button-default-background: transparent;
-  --ck-color-button-default-hover-background: rgba(31, 115, 183, 0.08);
-  --ck-color-button-default-active-background: rgba(31, 115, 183, 0.2);
+  --ck-color-button-default-hover-background: rgba(31, 115, 183, .08);
+  --ck-color-button-default-active-background: rgba(31, 115, 183, .2);
   --ck-color-button-default-active-shadow: transparent; /* TODO NEEDS WORK */
   --ck-color-button-default-disabled-background: #d8dcde; /* GREY-300 */
-
   --ck-color-button-on-background: var(--ck-color-button-default-active-background);
   --ck-color-button-on-hover-background: var(--ck-color-button-default-active-background);
   --ck-color-button-on-active-background: var(--ck-color-button-default-active-background);

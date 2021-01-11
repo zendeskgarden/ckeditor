@@ -13,7 +13,8 @@
     "build:storybook": "build-storybook -s .storybook/public",
     "format": "prettier-package-json --write && yarn format:all --write",
     "format:all": "prettier --loglevel warn '**/*.{js,ts,json,md}' '.storybook/**/*.{js,ts,json,md}' '!CHANGELOG.md' '!dist/**'",
-    "lint": "yarn lint:js && yarn lint:md",
+    "lint": "yarn lint:js && yarn lint:css && yarn lint:md",
+    "lint:css": "stylelint 'src/**/*.css'",
     "lint:js": "eslint src/ .storybook/ --ext js,ts --max-warnings 0",
     "lint:md": "markdownlint README.md src/**/*.md",
     "start": "start-storybook -s .storybook/public -p 6006",
@@ -45,6 +46,7 @@
     "@zendeskgarden/eslint-config": "15.0.0",
     "@zendeskgarden/react-theming": "8.28.1",
     "@zendeskgarden/scripts": "0.1.11",
+    "@zendeskgarden/stylelint-config": "15.0.0",
     "@zendeskgarden/svg-icons": "6.27.0",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
@@ -63,7 +65,9 @@
     "react-dom": "16.14.0",
     "react-is": "17.0.1",
     "standard-version": "9.0.0",
-    "styled-components": "5.2.1"
+    "styled-components": "5.2.1",
+    "stylelint": "13.8.0",
+    "stylelint-order": "4.1.0"
   },
   "keywords": [
     "ckeditor",
