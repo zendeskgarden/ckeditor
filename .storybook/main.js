@@ -9,6 +9,7 @@
 
 const { styles } = require('@ckeditor/ckeditor5-dev-utils');
 const CKEditorWebpackPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
+const { iconPlugins } = require('./gardenIcons');
 
 function isCssRule(rule) {
   return rule.test.toString().indexOf('css') > -1;
@@ -24,7 +25,7 @@ module.exports = {
   webpackFinal: config => {
     config.module.rules.forEach(rule => {
       if (isCssRule(rule)) {
-        rule.exclude = /ckeditor5-[^/]+\/theme\/[\w-/]+\.css$/;
+        rule.exclude = [/ckeditor5-[^/]+\/theme\/[\w-/]+\.css$/, /theme\/[\w-/]+\.css$/];
       } else if (isSvgRule(rule)) {
         rule.exclude = [/ckeditor5-[^/]+\/theme\/icons\/[^/]+\.svg$/, /@zendeskgarden\/svg-icons/];
       }
@@ -39,7 +40,7 @@ module.exports = {
         use: ['raw-loader']
       },
       {
-        test: /ckeditor5-[^/\\]+[/\\]theme[/\\].+\.css$/,
+        test: [/ckeditor5-[^/]+\/theme\/[\w-/]+\.css$/, /theme\/[\w-/]+\.css$/],
         use: [
           {
             loader: 'style-loader'
@@ -61,7 +62,8 @@ module.exports = {
       new CKEditorWebpackPlugin({
         language: 'en',
         buildAllTranslationsToSeparateFiles: true
-      })
+      }),
+      ...iconPlugins
     );
 
     return config;

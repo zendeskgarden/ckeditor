@@ -1,0 +1,23 @@
+.ck-content blockquote {
+  border-left: 2px solid #c2c8cc; /* GREY-400 */
+  padding: 0 0 0 calc(var(--ck-spacing-unit) * 4);
+  overflow: hidden;
+  font-style: inherit;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+}
+
+.ck-content[dir='rtl'] blockquote {
+  border-right: 2px solid #c2c8cc; /* GREY-400 */
+  border-left: 0;
+  padding: 0 calc(var(--ck-spacing-unit) * 4) 0 0;
+}
+
+.ck-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.ck-content pre {
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+}

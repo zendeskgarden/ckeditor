@@ -1,0 +1,14 @@
+.ck-content code {
+  border-radius: 2px;
+  background-color: #e9ebed; /* GREY-200 */
+  padding: 1.5px;
+  color: #49545c;/* GREY-700 */
+  /* stylelint-disable-next-line max-line-length */
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: calc(1em - 1px);
+  direction: ltr;
+}
+
+.ck.ck-editor__editable .ck-code_selected {
+  background-color: #e9ebed; /* GREY-200 */
+}
