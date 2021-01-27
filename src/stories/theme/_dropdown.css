@@ -1,0 +1,11 @@
+.ck.ck-dropdown .ck-dropdown__button {
+  & .ck-dropdown__arrow {
+    transition: transform .25s ease-in-out 0s, color .25s ease-in-out 0s;
+  }
+
+  &.ck-on {
+    & .ck-dropdown__arrow {
+      transform: rotate(180deg);
+    }
+  }
+}
