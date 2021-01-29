@@ -9,3 +9,11 @@
     }
   }
 }
+
+.ck[dir='rtl'].ck-dropdown .ck-dropdown__button {
+  &.ck-on {
+    & .ck-dropdown__arrow {
+      transform: rotate(-180deg);
+    }
+  }
+}
