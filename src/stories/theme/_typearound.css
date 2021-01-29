@@ -1,16 +1,19 @@
 /* stylelint-disable selector-max-compound-selectors,
-   selector-combinator-space-before, indentation */
+   selector-combinator-space-before, indentation,
+   declaration-no-important, no-descending-specificity */
 
 @import '@ckeditor/ckeditor5-theme-lark/theme/mixins/_focus.css';
 
 .ck .ck-widget {
   &.ck-widget_selected {
-    box-shadow: var(--ck-focus-outer-shadow), 0 0;
-
     &.ck-widget_type-around_show-fake-caret_before,
 		&.ck-widget_type-around_show-fake-caret_after {
-			box-shadow: none;
+      outline-color: transparent !important;
 		}
+  }
+
+  &:not(.ck-widget_selected):hover {
+    outline-color: transparent !important;
   }
 
   & > .ck-widget__type-around > .ck-widget__type-around__fake-caret {

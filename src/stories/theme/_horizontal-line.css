@@ -1,5 +1,22 @@
+/* stylelint-disable selector-max-compound-selectors,
+   selector-combinator-space-before, indentation,
+   declaration-no-important */
+
 .ck-content hr {
-  margin: var(--ck-spacing-extra-large) 0;
+  margin: var(--ck-spacing-standard) 0;
   background-color: #d8dcde; /* GREY-300 */
   height: 1px;
+}
+
+.ck .ck-widget.ck-horizontal-line {
+  &.ck-widget_selected:not(.ck-widget_type-around_show-fake-caret_before,
+    .ck-widget_type-around_show-fake-caret_after) {
+    outline-color: transparent !important;
+    border-radius: var(--ck-border-radius) !important;
+    box-shadow: var(--ck-focus-outer-shadow), 0 0;
+
+    & hr {
+      background-color: var(--ck-color-base-focus);
+    }
+  }
 }
