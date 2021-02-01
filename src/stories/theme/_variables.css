@@ -2,8 +2,20 @@
 
 :root {
   /* FONTS */
-  /* stylelint-disable-next-line value-keyword-case */
-  --ck-font-face: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, sans-serif;
+  /* stylelint-disable value-keyword-case */
+  --ck-font-face:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    Helvetica Neue,
+    Arial,
+    sans-serif;
+  /* stylelint-enable value-keyword-case */
   --ck-font-size-base: 14px;
   --ck-line-height-base: 1.84615;
   --ck-font-size-tiny: 10px;
@@ -20,6 +32,8 @@
   --ck-color-base-focus: #1f73b7; /* BLUE-600 */
   --ck-color-base-text: #2f3941; /* GREY-800  */
   --ck-color-base-error: #cc3340; /* RED-600 */
+  --ck-color-focus-border: var(--ck-color-base-focus);
+  --ck-color-focus-outer-shadow: rgba(31, 115, 183, .35); /* BLUE-600 w/ alpha */
 
   /* SPACING */
   --ck-spacing-unit: 4px;
@@ -33,6 +47,7 @@
 
   /* BORDERS */
   --ck-border-radius: var(--ck-spacing-unit);
+  --ck-border-radius-small: var(--ck-spacing-small);
 
   /* ICONS */
   --ck-icon-size: var(--ck-spacing-extra-large);
@@ -47,6 +62,7 @@
   --ck-drop-shadow: var(--ck-color-shadow-drop) 0 20px 30px 0;
 
   /* WIDGET */
+  --ck-widget-outline-thickness: 1px;
   --ck-color-widget-hover-border: #fed6a8; /* YELLOW-300 */
 
   /* BUTTONS */
@@ -54,7 +70,7 @@
   --ck-color-button-default-hover-background: rgba(31, 115, 183, .08);
   --ck-color-button-default-active-background: rgba(31, 115, 183, .2);
   --ck-color-button-default-active-shadow: transparent; /* TODO NEEDS WORK */
-  --ck-color-button-default-disabled-background: #d8dcde; /* GREY-300 */
+  --ck-color-button-default-disabled-background: transparent;
   --ck-color-button-on-background: var(--ck-color-button-default-active-background);
   --ck-color-button-on-hover-background: var(--ck-color-button-default-active-background);
   --ck-color-button-on-active-background: var(--ck-color-button-default-active-background);
@@ -63,4 +79,9 @@
 
   /* DROPDOWNS */
   --ck-dropdown-arrow-size: var(--ck-spacing-extra-large);
+
+  /* LISTS */
+  --ck-color-list-button-on-background: inherit;
+  --ck-color-list-button-on-background-focus: var(--ck-color-list-button-hover-background);
+  --ck-color-list-button-on-text: var(--ck-color-base-text);
 }

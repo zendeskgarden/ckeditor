@@ -16,7 +16,7 @@ import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
-import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
+import CodeBlockEditing from '@ckeditor/ckeditor5-code-block/src/codeblockediting';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
@@ -31,8 +31,8 @@ import Widget from '@ckeditor/ckeditor5-widget/src/widget';
 import { add } from '@ckeditor/ckeditor5-utils/src/translation-service';
 import { getEnvKeystrokeText } from '@ckeditor/ckeditor5-utils/src/keyboard';
 
-// import GardenEditor from '../gardeneditor';
 import './theme/styles.css';
+import { CodeBlockUI } from './plugins/CodeBlockUI';
 import { INITIAL_DATA } from './initialData';
 
 const EDITOR_LOCAL_STORAGE_KEY = 'ckeditor5-demo-1';
@@ -84,7 +84,8 @@ export const Default = () => {
           List,
           BlockQuote,
           Heading,
-          CodeBlock,
+          CodeBlockEditing,
+          CodeBlockUI,
           Widget
         ],
         toolbar: [
@@ -92,6 +93,7 @@ export const Default = () => {
           'bold',
           'italic',
           'underline',
+          'code',
           '|',
           'bulletedList',
           'numberedList',
@@ -99,7 +101,6 @@ export const Default = () => {
           'indent',
           '|',
           'blockquote',
-          'code',
           'codeBlock',
           'link',
           'horizontalLine'

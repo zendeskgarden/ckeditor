@@ -1,0 +1,104 @@
+/* stylelint-disable selector-max-compound-selectors,
+   selector-combinator-space-before, indentation,
+   declaration-no-important, no-descending-specificity */
+
+@import '@ckeditor/ckeditor5-theme-lark/theme/mixins/_focus.css';
+
+.ck .ck-widget {
+  &.ck-widget_selected {
+    &.ck-widget_type-around_show-fake-caret_before,
+		&.ck-widget_type-around_show-fake-caret_after {
+      outline-color: transparent !important;
+		}
+  }
+
+  &:not(.ck-widget_selected):hover {
+    outline-color: transparent !important;
+  }
+
+  & > .ck-widget__type-around > .ck-widget__type-around__fake-caret {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  &.ck-widget_type-around_show-fake-caret_before
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -2px;
+    width: 1px;
+  }
+
+  &.ck-widget_type-around_show-fake-caret_after
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    display: block;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    left: unset;
+    width: 1px;
+  }
+
+  &:hover.ck-widget_type-around_show-fake-caret_before
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    top: 0;
+    bottom: 0;
+    left: calc((-1 * var(--ck-widget-outline-thickness)) - 2px);
+  }
+
+  &:hover.ck-widget_type-around_show-fake-caret_after
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    top: 0;
+    right: calc((-1 * var(--ck-widget-outline-thickness)) - 2px);
+    bottom: 0;
+  }
+}
+
+.ck[dir='rtl'] .ck-widget {
+  &.ck-widget_type-around_show-fake-caret_before
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    display: block;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    width: 1px;
+  }
+
+  &.ck-widget_type-around_show-fake-caret_after
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    display: block;
+    top: 0;
+    right: unset;
+    bottom: 0;
+    left: -2px;
+    width: 1px;
+  }
+
+  &:hover.ck-widget_type-around_show-fake-caret_before
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    top: 0;
+    right: calc((-1 * var(--ck-widget-outline-thickness)) - 2px);
+    bottom: 0;
+  }
+
+  &:hover.ck-widget_type-around_show-fake-caret_after
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    top: 0;
+    bottom: 0;
+    left: calc((-1 * var(--ck-widget-outline-thickness)) - 2px);
+  }
+}

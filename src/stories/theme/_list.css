@@ -1,3 +1,41 @@
+/**
+ * [1] - Due to PostCSS limitations in CKEditor we must include our icon
+ *       directly.
+ */
+.ck.ck-list__item {
+  & .ck-button {
+    position: relative;
+    padding: 10px 32px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity .1s ease-in-out;
+      opacity: 0;
+      background: no-repeat 50% / 16px url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' focusable='false' viewBox='0 0 16 16' color='%231f73b7'%3E %3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' d='M1 9l4 4L15 3'/%3E %3C/svg%3E"); /* [1] */
+      width: 32px;
+      height: 100%;
+      content: '';
+    }
+
+    &:focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+      background-color: var(--ck-color-list-button-hover-background);
+    }
+
+    & .ck-button__label {
+      line-height: 20px;
+    }
+
+    &.ck-on::before {
+      opacity: 1;
+    }
+  }
+}
+
 .ck-content ul {
   margin: 16px 0 16px 20px;
   padding: 0;
