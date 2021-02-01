@@ -4,6 +4,12 @@
 
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
+Some of the code included in this Zendesk repo may depend upon software
+authored and provided by CKSource Frederico Knabben. The terms and conditions
+of the Apache license do not extend to software provided by CKSource, which
+may be provided under different licenses. Please see
+https://ckeditor.com/legal/ckeditor-oss-license/ for additional information.
+
 1. Definitions.
 
    "License" shall mean the terms and conditions for use, reproduction,

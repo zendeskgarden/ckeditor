@@ -39,3 +39,10 @@ conduct](.github/CODE_OF_CONDUCT.md). Please participate accordingly.
 Copyright 2021 Zendesk
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md)
+
+Some of the code included in this Zendesk repo may depend upon software
+authored and provided by CKSource Frederico Knabben. The terms and conditions
+of the Apache license do not extend to software provided by CKSource, which
+may be provided under different licenses. Please see the [CKEditor Software
+License Agreement](https://ckeditor.com/legal/ckeditor-oss-license/) for
+additional information.
