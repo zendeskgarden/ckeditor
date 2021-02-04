@@ -1,0 +1,13 @@
+.ck-content code {
+  border-radius: var(--ck-border-radius-small);
+  background-color: $ZD-PALETTE-GREY-200;
+  padding: 1.5px;
+  color: $ZD-PALETTE-GREY-700;
+  font-family: $ZD-FONTS-MONO;
+  font-size: calc(1em - 1px);
+  direction: ltr;
+}
+
+.ck.ck-editor__editable .ck-code_selected {
+  background-color: $ZD-PALETTE-GREY-200;
+}

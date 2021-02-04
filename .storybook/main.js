@@ -10,6 +10,7 @@
 const { styles } = require('@ckeditor/ckeditor5-dev-utils');
 const CKEditorWebpackPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
 const { iconPlugins } = require('./gardenIcons');
+const { plugins } = require('../postcss.config');
 
 function isCssRule(rule) {
   return rule.test.toString().indexOf('css') > -1;
@@ -31,6 +32,15 @@ module.exports = {
       }
     });
 
+    const postCssConfig = styles.getPostCssConfig({
+      themeImporter: {
+        themePath: require.resolve('@ckeditor/ckeditor5-theme-lark')
+      },
+      minify: true
+    });
+
+    postCssConfig.plugins.push(...plugins);
+
     config.module.rules.unshift(
       {
         test: [
@@ -47,12 +57,7 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-            options: styles.getPostCssConfig({
-              themeImporter: {
-                themePath: require.resolve('@ckeditor/ckeditor5-theme-lark')
-              },
-              minify: true
-            })
+            options: postCssConfig
           }
         ]
       }

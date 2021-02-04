@@ -1,0 +1,12 @@
+/* stylelint-disable declaration-no-important */
+
+.ck.ck-editor__editable {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.ck.ck-toolbar {
+  border-top: 0;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}

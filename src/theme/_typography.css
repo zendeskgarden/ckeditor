@@ -1,0 +1,88 @@
+/* stylelint-disable no-descending-specificity */
+
+.ck-content {
+  /* XXL */
+  & h2 {
+    line-height: $ZD-LINEHEIGHTS-XXL;
+    font-size: var(--ck-font-size-extra-large);
+    font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
+    margin-block-end: var(--ck-spacing-medium);
+  }
+
+  /* XL */
+  & h3 {
+    line-height: $ZD-LINEHEIGHTS-XL;
+    font-size: var(--ck-font-size-large);
+    font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
+    margin-block-start: var(--ck-spacing-extra-large);
+    margin-block-end: var(--ck-spacing-medium);
+  }
+
+  /* LG */
+  & h4 {
+    line-height: $ZD-LINEHEIGHTS-LG;
+    font-size: var(--ck-font-size-big);
+    font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
+    margin-block-start: var(--ck-spacing-extra-large);
+    margin-block-end: var(--ck-spacing-medium);
+  }
+
+  /* MD */
+  & h5 {
+    line-height: $ZD-LINEHEIGHTS-MD;
+    font-size: var(--ck-font-size-base);
+    font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
+    margin-block-start: var(--ck-spacing-extra-large);
+    margin-block-end: var(--ck-spacing-large);
+  }
+
+  & p {
+    margin-block-start: var(--ck-spacing-extra-large);
+    margin-block-end: var(--ck-spacing-extra-large);
+  }
+
+  & strong {
+    font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
+  }
+
+  & u {
+    text-decoration: underline;
+  }
+
+  & ul {
+    margin: 0 0 0 calc(var(--ck-spacing-unit) * 6);
+    margin-block-start: var(--ck-spacing-extra-large);
+    margin-block-end: var(--ck-spacing-extra-large);
+    padding: 0;
+    list-style-position: outside;
+    list-style-type: disc;
+
+    & li {
+      padding: 0;
+    }
+
+    & ul, & ol {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  & ol {
+    margin: 0 0 0 calc(var(--ck-spacing-unit) * 6);
+    margin-block-start: var(--ck-spacing-extra-large);
+    margin-block-end: var(--ck-spacing-extra-large);
+    padding: 0;
+    list-style-position: outside;
+    list-style-type: decimal;
+
+    & li {
+      margin-left: -var(--ck-spacing-medium);
+      padding: 0 0 0 var(--ck-spacing-medium);
+    }
+
+    & ol, & ul {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

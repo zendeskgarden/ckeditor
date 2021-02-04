@@ -33,6 +33,8 @@ export class CodeBlockUI extends Plugin {
 
       buttonView.bind('isEnabled').to(command);
 
+      buttonView.bind('isOn').to(command, 'value', value => !!value);
+
       buttonView.on('execute', () => {
         editor.execute('codeBlock', {
           language: defaultLanguageDefinition.language

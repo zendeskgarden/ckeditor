@@ -11,7 +11,9 @@
 
 > :seedling: Garden is the design system by Zendesk
 
-TODO...
+This package provides Garden theme customizations for the
+[@ckeditor/ckeditor5-theme-lark](https://ckeditor.com/docs/ckeditor5/latest/api/theme-lark.html)
+package.
 
 ## Installation
 
@@ -21,7 +23,33 @@ npm install --save-dev @zendeskgarden/ckeditor
 
 ## Usage
 
-TODO...
+When building editors from source, ensure that any [webpack configurations](https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/advanced-setup.html#webpack-configuration)
+also include the Garden package.
+
+```js
+{
+  test: [/ckeditor5-[^/\\]+[/\\]theme[/\\].+\.css$/, /zendeskgarden[^/\\]+[/\\]theme[/\\].+\.css$/],
+  use: [
+      {
+        loader: 'style-loader'
+      },
+      {
+        loader: 'postcss-loader',
+        options: styles.getPostCssConfig( {
+            themeImporter: {
+                themePath: require.resolve('@ckeditor/ckeditor5-theme-lark')
+            }
+        })
+      },
+  ]
+}
+```
+
+Then include the theme overrides in your application.
+
+```js
+import '@zendeskgarden/ckeditor';
+```
 
 ## Contribution
 

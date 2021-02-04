@@ -1,6 +1,6 @@
 .ck.ck-tooltip .ck-tooltip__text {
   /* stylelint-disable-next-line declaration-no-important */
-  border-radius: 2px !important;
+  border-radius: var(--ck-border-radius-small) !important;
   padding: 0 1em;
   font-size: var(--ck-font-size-small);
 }

@@ -1,0 +1,17 @@
+.ck.ck-editor__editable_inline {
+  border: $ZD-BORDERS-SM var(--ck-color-toolbar-border);
+  padding: 0 var(--ck-spacing-extra-large);
+
+  & > :first-child {
+    margin-top: var(--ck-spacing-extra-large);
+  }
+
+  & > :last-child {
+    margin-bottom: var(--ck-spacing-extra-large);
+  }
+
+  /* Hide widget mobile type-around feature */
+  & .ck-widget .ck-widget__type-around__button {
+    display: none;
+  }
+}

@@ -1,8 +1,0 @@
-.ck.ck-editor__editable {
-  padding: 0 var(--ck-spacing-large);
-
-  /* Hide widget mobile type-around feature */
-  & .ck-widget .ck-widget__type-around__button {
-    display: none;
-  }
-}
