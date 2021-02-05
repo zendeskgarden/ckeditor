@@ -55,11 +55,11 @@
     }
 
     & > :first-child {
-      margin-top: var(--ck-spacing-standard);
+      margin-top: var(--ck-spacing-medium);
     }
 
     & > :last-child {
-      margin-bottom: var(--ck-spacing-standard);
+      margin-bottom: var(--ck-spacing-medium);
     }
 
     &.ck-dropdown__panel_ne,
