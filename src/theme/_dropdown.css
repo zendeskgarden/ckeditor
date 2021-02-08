@@ -1,5 +1,4 @@
-/* stylelint-disable declaration-no-important,
-  max-nesting-depth, selector-max-compound-selectors */
+/* stylelint-disable max-nesting-depth, selector-max-compound-selectors */
 
 @keyframes zd-menu--top-open {
   0% {

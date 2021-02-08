@@ -1,5 +1,3 @@
-/* stylelint-disable declaration-no-important */
-
 .ck {
   &.ck-toolbar {
     padding: 0 var(--ck-spacing-standard);

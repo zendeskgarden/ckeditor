@@ -1,7 +1,6 @@
 /* stylelint-disable selector-max-compound-selectors,
    selector-combinator-space-before, indentation,
-   declaration-no-important, no-descending-specificity,
-   max-line-length */
+   no-descending-specificity, max-line-length */
 
 @import '@ckeditor/ckeditor5-theme-lark/theme/mixins/_focus.css';
 

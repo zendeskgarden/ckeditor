@@ -1,6 +1,6 @@
 .ck.ck-button {
   &:focus {
-    box-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 3px;
+    box-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
   }
 
   &:focus,
