@@ -45,7 +45,7 @@
 
   /* SHADOWS */
   --ck-color-shadow-drop: rgba(23, 73, 77, .15); /* CHROME-600 */
-  --ck-inner-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 3px inset;
+  --ck-inner-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD inset;
   --ck-drop-shadow: var(--ck-color-shadow-drop) 0 20px 30px 0;
 
   /* WIDGET */
