@@ -3,14 +3,15 @@
    declaration-no-important, max-line-length */
 
 .ck-content hr {
-  margin: var(--ck-spacing-medium) 0;
+  margin: 0;
   background-color: $ZD-PALETTE-GREY-300;
   height: 1px;
 }
 
 .ck .ck-widget.ck-horizontal-line {
-  margin-block-start: var(--ck-spacing-unit);
-  margin-block-end: var(--ck-spacing-unit);
+  padding: var(--ck-spacing-medium) 0;
+  margin-block-start: calc(var(--ck-spacing-medium) * -1);
+  margin-block-end: calc(var(--ck-spacing-medium) * -1);
 
   &.ck-widget_selected:not(.ck-widget_type-around_show-fake-caret_before,
     .ck-widget_type-around_show-fake-caret_after) {
