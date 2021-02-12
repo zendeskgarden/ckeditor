@@ -10,5 +10,6 @@
 
   & code {
     background-color: inherit;
+    padding: 0;
   }
 }
