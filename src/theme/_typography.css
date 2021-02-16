@@ -7,7 +7,7 @@
     line-height: $ZD-LINEHEIGHTS-XXL;
     font-size: var(--ck-font-size-extra-large);
     font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
-    margin-block-end: var(--ck-spacing-large);
+    margin-block-end: var(--ck-spacing-extra-large);
   }
 
   /* XL */
@@ -16,7 +16,7 @@
     font-size: var(--ck-font-size-large);
     font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
     margin-block-start: var(--ck-spacing-extra-large);
-    margin-block-end: var(--ck-spacing-large);
+    margin-block-end: var(--ck-spacing-extra-large);
   }
 
   /* LG */
@@ -25,7 +25,7 @@
     font-size: var(--ck-font-size-big);
     font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
     margin-block-start: var(--ck-spacing-extra-large);
-    margin-block-end: var(--ck-spacing-large);
+    margin-block-end: var(--ck-spacing-extra-large);
   }
 
   /* MD */
@@ -34,7 +34,7 @@
     font-size: var(--ck-font-size-base);
     font-weight: $ZD-FONTWEIGHTS-SEMIBOLD;
     margin-block-start: var(--ck-spacing-extra-large);
-    margin-block-end: var(--ck-spacing-large);
+    margin-block-end: var(--ck-spacing-extra-large);
   }
 
   & p {
