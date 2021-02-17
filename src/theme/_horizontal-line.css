@@ -10,8 +10,8 @@
 
 .ck .ck-widget.ck-horizontal-line {
   padding: var(--ck-spacing-medium) 0;
-  margin-block-start: calc(var(--ck-spacing-medium) * -1);
-  margin-block-end: calc(var(--ck-spacing-medium) * -1);
+  margin-block-start: var(--ck-spacing-extra-large);
+  margin-block-end: var(--ck-spacing-extra-large);
 
   &.ck-widget_selected:not(.ck-widget_type-around_show-fake-caret_before,
     .ck-widget_type-around_show-fake-caret_after) {
