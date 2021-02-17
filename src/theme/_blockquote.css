@@ -4,8 +4,8 @@
     padding: 0 0 0 var(--ck-spacing-extra-large);
     overflow: hidden;
     font-style: inherit;
-    margin-block-start: var(--ck-spacing-extra-large);
-    margin-block-end: var(--ck-spacing-extra-large);
+    margin-block-start: calc(var(--ck-spacing-unit) * 5);
+    margin-block-end: calc(var(--ck-spacing-unit) * 5);
 
     & p:first-child {
       margin-top: 0;
