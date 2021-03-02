@@ -1,0 +1,34 @@
+.ck.ck-button {
+  &:focus {
+    box-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
+  }
+
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+
+  &:not(.ck-disabled) {
+    cursor: pointer;
+  }
+
+  &:not(.ck-button-save,.ck-button-cancel) .ck-button__icon {
+    color: $ZD-PALETTE-GREY-600;
+  }
+
+  &:hover:not(.ck-disabled,.ck-on,.ck-button-save,.ck-button-cancel) {
+    & .ck-button__icon {
+      color: $ZD-PALETTE-GREY-700;
+    }
+  }
+
+  &.ck-on {
+    & .ck-button__icon {
+      color: $ZD-PALETTE-GREY-800;
+    }
+  }
+
+  &.ck-disabled:active {
+    box-shadow: none;
+  }
+}

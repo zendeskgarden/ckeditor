@@ -1,6 +1,6 @@
 /* stylelint-disable selector-max-compound-selectors,
    selector-combinator-space-before, indentation,
-   declaration-no-important, no-descending-specificity */
+   no-descending-specificity, max-line-length */
 
 @import '@ckeditor/ckeditor5-theme-lark/theme/mixins/_focus.css';
 
@@ -32,7 +32,7 @@
     display: block;
     top: 0;
     bottom: 0;
-    left: -2px;
+    left: -var(--ck-spacing-small);
     width: 1px;
   }
 
@@ -41,7 +41,7 @@
     > .ck-widget__type-around__fake-caret {
     display: block;
     top: 0;
-    right: -2px;
+    right: -var(--ck-spacing-small);
     bottom: 0;
     left: unset;
     width: 1px;
@@ -52,14 +52,14 @@
     > .ck-widget__type-around__fake-caret {
     top: 0;
     bottom: 0;
-    left: calc((-1 * var(--ck-widget-outline-thickness)) - 2px);
+    left: calc((-1 * var(--ck-widget-outline-thickness)) - var(--ck-spacing-small));
   }
 
   &:hover.ck-widget_type-around_show-fake-caret_after
     > .ck-widget__type-around
     > .ck-widget__type-around__fake-caret {
     top: 0;
-    right: calc((-1 * var(--ck-widget-outline-thickness)) - 2px);
+    right: calc((-1 * var(--ck-widget-outline-thickness)) - var(--ck-spacing-small));
     bottom: 0;
   }
 }
@@ -70,7 +70,7 @@
     > .ck-widget__type-around__fake-caret {
     display: block;
     top: 0;
-    right: -2px;
+    right: -var(--ck-spacing-small);
     bottom: 0;
     width: 1px;
   }
@@ -82,7 +82,7 @@
     top: 0;
     right: unset;
     bottom: 0;
-    left: -2px;
+    left: -var(--ck-spacing-small);
     width: 1px;
   }
 
@@ -90,7 +90,7 @@
     > .ck-widget__type-around
     > .ck-widget__type-around__fake-caret {
     top: 0;
-    right: calc((-1 * var(--ck-widget-outline-thickness)) - 2px);
+    right: calc((-1 * var(--ck-widget-outline-thickness)) - var(--ck-spacing-small));
     bottom: 0;
   }
 
@@ -99,6 +99,6 @@
     > .ck-widget__type-around__fake-caret {
     top: 0;
     bottom: 0;
-    left: calc((-1 * var(--ck-widget-outline-thickness)) - 2px);
+    left: calc((-1 * var(--ck-widget-outline-thickness)) - var(--ck-spacing-small));
   }
 }

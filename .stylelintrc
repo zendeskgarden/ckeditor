@@ -1,6 +1,7 @@
 {
   "extends": "@zendeskgarden/stylelint-config",
   "rules": {
-    "selector-max-specificity": null
+    "selector-max-specificity": null,
+    "declaration-no-important": null
   }
 }

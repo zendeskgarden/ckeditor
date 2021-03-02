@@ -1,19 +1,23 @@
 /* stylelint-disable selector-max-compound-selectors,
    selector-combinator-space-before, indentation,
-   declaration-no-important */
+   declaration-no-important, max-line-length */
 
 .ck-content hr {
-  margin: var(--ck-spacing-standard) 0;
-  background-color: #d8dcde; /* GREY-300 */
+  margin: 0;
+  background-color: $ZD-PALETTE-GREY-300;
   height: 1px;
 }
 
 .ck .ck-widget.ck-horizontal-line {
+  padding: var(--ck-spacing-medium) 0;
+  margin-block-start: var(--ck-spacing-extra-large);
+  margin-block-end: var(--ck-spacing-extra-large);
+
   &.ck-widget_selected:not(.ck-widget_type-around_show-fake-caret_before,
     .ck-widget_type-around_show-fake-caret_after) {
     outline-color: transparent !important;
-    border-radius: var(--ck-border-radius) !important;
-    box-shadow: var(--ck-focus-outer-shadow), 0 0;
+    border-radius: var(--ck-border-radius-small) !important;
+    box-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 var(--ck-spacing-small);
 
     & hr {
       background-color: var(--ck-color-base-focus);

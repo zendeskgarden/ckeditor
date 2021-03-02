@@ -1,0 +1,35 @@
+/* stylelint-disable max-line-length */
+
+.ck.ck-list__item {
+  & .ck-button {
+    position: relative;
+    padding: 10px calc(var(--ck-spacing-extra-large) * 2);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity .1s ease-in-out;
+      opacity: 0;
+      background: no-repeat 50% / var(--ck-spacing-extra-large) svg-load('16/check-lg-stroke.svg', color: $ZD-PALETTE-BLUE-600);
+      width: calc(var(--ck-spacing-extra-large) * 2);
+      height: 100%;
+      content: '';
+    }
+
+    &:focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+      background-color: var(--ck-color-list-button-hover-background);
+    }
+
+    & .ck-button__label {
+      line-height: calc(var(--ck-spacing-unit) * 5);
+    }
+
+    &.ck-on::before {
+      opacity: 1;
+    }
+  }
+}

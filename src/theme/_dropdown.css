@@ -1,5 +1,4 @@
-/* stylelint-disable declaration-no-important,
-  max-nesting-depth, selector-max-compound-selectors */
+/* stylelint-disable max-nesting-depth, selector-max-compound-selectors */
 
 @keyframes zd-menu--top-open {
   0% {
@@ -55,21 +54,21 @@
     }
 
     & > :first-child {
-      margin-top: var(--ck-spacing-standard);
+      margin-top: var(--ck-spacing-medium);
     }
 
     & > :last-child {
-      margin-bottom: var(--ck-spacing-standard);
+      margin-bottom: var(--ck-spacing-medium);
     }
 
     &.ck-dropdown__panel_ne,
     &.ck-dropdown__panel_nw {
-      bottom: calc(100% + 4px);
+      bottom: calc(100% + var(--ck-spacing-unit));
     }
 
     &.ck-dropdown__panel_se,
     &.ck-dropdown__panel_sw {
-      top: calc(100% + 4px);
+      top: calc(100% + var(--ck-spacing-unit));
       bottom: auto;
     }
 
