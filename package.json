@@ -23,7 +23,7 @@
     "lint:js": "eslint src/ .storybook/ --ext js,ts --max-warnings 0",
     "lint:md": "markdownlint README.md src/**/*.md",
     "prepare": "yarn build",
-    "start": "start-storybook -s .storybook/public -p 6006",
+    "start": "start-storybook -p 6006",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
     "test": "prettier-package-json --list-different && yarn format:all --check && yarn lint"
   },
@@ -46,9 +46,7 @@
     "@ckeditor/ckeditor5-theme-lark": "24.0.0",
     "@ckeditor/ckeditor5-widget": "24.0.0",
     "@storybook/addon-a11y": "6.1.15",
-    "@storybook/addon-actions": "6.1.10",
     "@storybook/addon-essentials": "6.1.10",
-    "@storybook/addon-links": "6.1.10",
     "@storybook/react": "6.1.10",
     "@zendeskgarden/eslint-config": "17.1.0",
     "@zendeskgarden/react-theming": "8.31.0",

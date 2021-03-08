@@ -39,7 +39,7 @@ import { INITIAL_DATA } from './initialData';
 const EDITOR_LOCAL_STORAGE_KEY = 'ckeditor5-demo-1';
 
 export default {
-  title: 'Examples'
+  title: 'Demo'
 };
 
 /**

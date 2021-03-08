@@ -5,15 +5,8 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import { previewTheme } from './gardenTheme';
-
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  docs: {
-    theme: previewTheme
-  },
-  backgrounds: { disable: true }
-};
+import { DEFAULT_THEME } from '@zendeskgarden/react-theming';
+import { create } from '@storybook/theming/create';
 
 const withBedrock = (story, context) => {
   if (context.globals.bedrock === 'enabled') {
@@ -38,6 +31,23 @@ export const globalTypes = {
         { value: 'disabled', title: 'Bedrock disabled' },
         { value: 'enabled', title: 'Bedrock enabled' }
       ]
+    }
+  }
+};
+
+export const parameters = {
+  backgrounds: {
+    default: DEFAULT_THEME.colors.base,
+    grid: { disable: true }
+  },
+  docs: {
+    theme: create({
+      base: DEFAULT_THEME.colors.base
+    })
+  },
+  options: {
+    storySort: {
+      order: ['README']
     }
   }
 };
