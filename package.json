@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "build": "postcss src/theme --dir dist/theme",
-    "build:storybook": "build-storybook -s .storybook/public",
+    "build:storybook": "build-storybook",
     "format": "prettier-package-json --write && yarn format:all --write",
     "format:all": "prettier --loglevel warn '**/*.{js,ts,json,md}' '.storybook/**/*.{js,ts,json,md}' '!CHANGELOG.md' '!dist/**'",
     "lint": "yarn lint:js && yarn lint:css && yarn lint:md",
