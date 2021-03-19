@@ -10,9 +10,9 @@ import { create } from '@storybook/theming/create';
 
 const withBedrock = (story, context) => {
   if (context.globals.bedrock === 'enabled') {
-    document.querySelector('link[href$="bedrock/index.css"]').removeAttribute('disabled');
+    document.querySelector('link[href$="bedrock/dist/index.css"]').removeAttribute('disabled');
   } else {
-    document.querySelector('link[href$="bedrock/index.css"]').setAttribute('disabled', true);
+    document.querySelector('link[href$="bedrock/dist/index.css"]').setAttribute('disabled', true);
   }
 
   return story();
@@ -28,8 +28,8 @@ export const globalTypes = {
     toolbar: {
       icon: 'paintbrush',
       items: [
-        { value: 'disabled', title: 'Bedrock disabled' },
-        { value: 'enabled', title: 'Bedrock enabled' }
+        { value: 'enabled', title: 'Bedrock enabled' },
+        { value: 'disabled', title: 'Bedrock disabled' }
       ]
     }
   }
