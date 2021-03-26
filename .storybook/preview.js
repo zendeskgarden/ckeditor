@@ -26,7 +26,7 @@ export const globalTypes = {
     description: 'CSS Bedrock',
     defaultValue: 'enabled',
     toolbar: {
-      icon: 'paintbrush',
+      icon: 'link',
       items: [
         { value: 'enabled', title: 'Bedrock enabled' },
         { value: 'disabled', title: 'Bedrock disabled' }
