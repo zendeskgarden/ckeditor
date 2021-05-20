@@ -66,6 +66,8 @@ export const Default = () => {
     window.localStorage.setItem(EDITOR_LOCAL_STORAGE_KEY, value);
   }, []);
 
+  const TOOLBAR_CLASS_NAME = 'toolbar-element';
+
   return (
     <>
       <CKEditor
@@ -126,9 +128,9 @@ export const Default = () => {
           /**
            * Attach decoupled toolbar
            */
-          const toolbarWrapper = document.querySelector('.toolbar-wrapper');
+          const toolbar = document.querySelector(`.${TOOLBAR_CLASS_NAME}`);
 
-          toolbarWrapper.appendChild(editor.ui.view.toolbar.element);
+          toolbar.appendChild(editor.ui.view.toolbar.element);
 
           /**
            * Disable spell checker for demo content
@@ -146,7 +148,7 @@ export const Default = () => {
         }}
       />
       <div className="toolbar-container">
-        <div className="toolbar-wrapper" />
+        <div className={`${TOOLBAR_CLASS_NAME}`} />
       </div>
     </>
   );
