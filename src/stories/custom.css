@@ -1,10 +1,22 @@
+:root {
+  --zd-border-width: $ZD-BORDERWIDTHS-SM;
+}
+
 .ck.ck-editor__editable {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
 
+.toolbar-container {
+  position: sticky;
+  bottom: 0;
+  margin-top: calc(var(--zd-border-width) * -1);
+  margin-bottom: -1rem;
+  background-color: #f8f8f8; /* storybook background color */
+  padding-bottom: 1rem;
+}
+
 .ck.ck-toolbar {
-  border-top: 0;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
 }

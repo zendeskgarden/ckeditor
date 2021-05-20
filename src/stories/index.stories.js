@@ -126,9 +126,9 @@ export const Default = () => {
           /**
            * Attach decoupled toolbar
            */
-          const toolbarContainer = document.querySelector('.toolbar-container');
+          const toolbarWrapper = document.querySelector('.toolbar-wrapper');
 
-          toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+          toolbarWrapper.appendChild(editor.ui.view.toolbar.element);
 
           /**
            * Disable spell checker for demo content
@@ -145,7 +145,9 @@ export const Default = () => {
           onValueChange(editorData);
         }}
       />
-      <div className="toolbar-container" />
+      <div className="toolbar-container">
+        <div className="toolbar-wrapper" />
+      </div>
     </>
   );
 };
