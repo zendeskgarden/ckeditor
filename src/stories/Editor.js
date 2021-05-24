@@ -109,6 +109,29 @@ export const Editor = ({ data, onChange, toolbarClassName }) => {
     toolbarElement.appendChild(editor.ui.view.toolbar.element);
 
     /**
+     * Reset tooltip placement
+     */
+    const toolbarItems = editor.ui.view.toolbar.items;
+
+    for (const toolbarItem of toolbarItems) {
+      if (toolbarItem.buttonView) {
+        toolbarItem.buttonView.set('tooltipPosition', 'n');
+      } else {
+        toolbarItem.set('tooltipPosition', 'n');
+      }
+    }
+
+    /**
+     * Reset overflow dropdown placement
+     */
+    if (!editor.config.get('toolbar').shouldNotGroupWhenFull) {
+      const overflowDropdown = editor.ui.view.toolbar._behavior.groupedItemsDropdown;
+
+      overflowDropdown.set('panelPosition', 'nw');
+      overflowDropdown.buttonView.set('tooltipPosition', 'n');
+    }
+
+    /**
      * Disable spell checker for demo content
      */
     editor.editing.view.change(writer => {
