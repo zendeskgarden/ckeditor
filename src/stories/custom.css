@@ -1,10 +1,28 @@
+:root {
+  --zd-border-width: $ZD-BORDERWIDTHS-SM;
+}
+
+/* stylelint-disable-next-line selector-max-id */
+#root {
+  background-color: inherit;
+}
+
 .ck.ck-editor__editable {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
 
+.toolbar-container {
+  position: sticky;
+  bottom: 0;
+  transition: inherit; /* storybook transition */
+  margin-top: calc(var(--zd-border-width) * -1);
+  margin-bottom: -1rem;
+  background-color: inherit; /* storybook background color */
+  padding-bottom: 1rem;
+}
+
 .ck.ck-toolbar {
-  border-top: 0;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
 }
