@@ -48,7 +48,7 @@ export const Default = () => {
         toolbarClassName={TOOLBAR_CLASS_NAME}
       />
       <div className="toolbar-container">
-        <div className={`${TOOLBAR_CLASS_NAME}`} />
+        <div className={TOOLBAR_CLASS_NAME} />
       </div>
     </>
   );
