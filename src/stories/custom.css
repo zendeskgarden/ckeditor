@@ -2,6 +2,11 @@
   --zd-border-width: $ZD-BORDERWIDTHS-SM;
 }
 
+/* stylelint-disable-next-line selector-max-id */
+#root {
+  background-color: inherit;
+}
+
 .ck.ck-editor__editable {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -10,9 +15,10 @@
 .toolbar-container {
   position: sticky;
   bottom: 0;
+  transition: inherit; /* storybook transition */
   margin-top: calc(var(--zd-border-width) * -1);
   margin-bottom: -1rem;
-  background-color: #f8f8f8; /* storybook background color */
+  background-color: inherit; /* storybook background color */
   padding-bottom: 1rem;
 }
 
