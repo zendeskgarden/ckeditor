@@ -28,7 +28,7 @@ also include the Garden package.
 
 ```js
 {
-  test: [/ckeditor5-[^/\\]+[/\\]theme[/\\].+\.css$/, /zendeskgarden[^/\\]+[/\\]theme[/\\].+\.css$/],
+  test: [/ckeditor5-[^/\\]+[/\\]theme[/\\].+\.css$/, /zendeskgarden[\/\\]ckeditor[\/\\].+[\/\\]theme[\/\\].+\.css$/],
   use: [
       {
         loader: 'style-loader'
