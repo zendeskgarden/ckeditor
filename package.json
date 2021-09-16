@@ -50,7 +50,7 @@
     "@storybook/react": "6.1.10",
     "@zendeskgarden/eslint-config": "17.1.0",
     "@zendeskgarden/react-theming": "8.31.0",
-    "@zendeskgarden/scripts": "0.1.11",
+    "@zendeskgarden/scripts": "1.2.1",
     "@zendeskgarden/stylelint-config": "15.0.0",
     "@zendeskgarden/svg-icons": "6.29.0",
     "babel-eslint": "10.1.0",
