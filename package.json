@@ -44,7 +44,7 @@
     "@ckeditor/ckeditor5-paragraph": "24.0.0",
     "@ckeditor/ckeditor5-react": "3.0.0",
     "@ckeditor/ckeditor5-theme-lark": "24.0.0",
-    "@ckeditor/ckeditor5-widget": "24.0.0",
+    "@ckeditor/ckeditor5-widget": "27.0.0",
     "@storybook/addon-a11y": "6.1.15",
     "@storybook/addon-essentials": "6.1.10",
     "@storybook/react": "6.1.10",
