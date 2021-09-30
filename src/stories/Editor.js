@@ -8,7 +8,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { getEnvKeystrokeText, keyCodes } from '@ckeditor/ckeditor5-utils/src/keyboard';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
@@ -28,15 +27,12 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Widget from '@ckeditor/ckeditor5-widget/src/widget';
 import { add } from '@ckeditor/ckeditor5-utils/src/translation-service';
+import { getEnvKeystrokeText } from '@ckeditor/ckeditor5-utils/src/keyboard';
 
 /**
  * Garden theme customizations
  */
 import '../theme/theme.css';
-
-// Patch unsupported square bracket characters
-keyCodes['['] = 219;
-keyCodes[']'] = 221;
 
 /**
  * Add custom tooltip values
