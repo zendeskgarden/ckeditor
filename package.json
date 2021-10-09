@@ -1,5 +1,6 @@
 {
   "name": "@zendeskgarden/ckeditor",
+  "version": "0.1.0",
   "description": "Garden editor implementation for CKEditor5",
   "license": "Apache-2.0",
   "author": "Zendesk Garden <garden@zendesk.com>",
@@ -8,7 +9,6 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/ckeditor/issues"
   },
-  "version": "0.1.0",
   "main": "dist/theme/theme.css",
   "files": [
     "dist"
