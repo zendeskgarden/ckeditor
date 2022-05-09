@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import { Editor } from './Editor';
@@ -24,11 +24,11 @@ export default {
 };
 
 export const Default = () => {
-  const [data] = useState(() => {
+  const data = useMemo(() => {
     const storedData = window.localStorage.getItem(EDITOR_LOCAL_STORAGE_KEY);
 
     return storedData || INITIAL_DATA;
-  });
+  }, []);
 
   const onValueChange = useCallback(value => {
     window.localStorage.setItem(EDITOR_LOCAL_STORAGE_KEY, value);
