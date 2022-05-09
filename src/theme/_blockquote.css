@@ -1,3 +1,5 @@
+/* stylelint-disable custom-property-pattern */
+
 .ck-content {
   & blockquote {
     border-left: 2px solid $ZD-PALETTE-GREY-400;

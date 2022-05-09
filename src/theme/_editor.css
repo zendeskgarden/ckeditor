@@ -1,3 +1,5 @@
+/* stylelint-disable custom-property-pattern */
+
 .ck.ck-editor__editable_inline {
   border: $ZD-BORDERS-SM var(--ck-color-toolbar-border);
   background-color: var(--ck-color-base-background);

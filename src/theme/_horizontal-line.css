@@ -1,6 +1,7 @@
 /* stylelint-disable selector-max-compound-selectors,
    selector-combinator-space-before, indentation,
-   declaration-no-important, max-line-length */
+   declaration-no-important, max-line-length,
+   custom-property-pattern, selector-not-notation */
 
 .ck-content hr {
   margin: 0;

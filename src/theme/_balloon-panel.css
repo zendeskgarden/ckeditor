@@ -1,3 +1,5 @@
+/* stylelint-disable custom-property-pattern */
+
 .ck.ck-balloon-panel {
   box-shadow: var(--ck-drop-shadow);
 }
