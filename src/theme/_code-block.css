@@ -1,3 +1,5 @@
+/* stylelint-disable custom-property-pattern */
+
 .ck-content pre {
   margin-block-start: var(--ck-spacing-extra-large);
   margin-block-end: var(--ck-spacing-extra-large);

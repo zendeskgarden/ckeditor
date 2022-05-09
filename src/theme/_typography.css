@@ -1,5 +1,6 @@
 /* stylelint-disable no-descending-specificity,
-  max-nesting-depth, selector-max-compound-selectors */
+  max-nesting-depth, selector-max-compound-selectors,
+  custom-property-pattern */
 
 .ck-content {
   /* XXL */

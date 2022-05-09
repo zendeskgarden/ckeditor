@@ -1,3 +1,5 @@
+/* stylelint-disable custom-property-pattern */
+
 .ck-content code {
   border-radius: var(--ck-border-radius-small);
   background-color: $ZD-PALETTE-GREY-200;
