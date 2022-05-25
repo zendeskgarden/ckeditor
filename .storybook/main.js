@@ -26,6 +26,9 @@ module.exports = {
     { name: '@storybook/addon-essentials', options: { actions: false, controls: false } },
     '@storybook/addon-a11y'
   ],
+  core: {
+    builder: 'webpack5'
+  },
   webpackFinal: config => {
     config.module.rules.forEach(rule => {
       if (isCssRule(rule)) {
@@ -59,8 +62,11 @@ module.exports = {
             loader: 'style-loader'
           },
           {
+            loader: 'css-loader'
+          },
+          {
             loader: 'postcss-loader',
-            options: postCssConfig
+            options: { postcssOptions: postCssConfig }
           }
         ]
       }
