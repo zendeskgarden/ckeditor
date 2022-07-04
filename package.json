@@ -69,7 +69,7 @@
     "eslint-plugin-notice": "0.9.10",
     "eslint-plugin-react": "7.29.4",
     "eslint-plugin-react-hooks": "4.5.0",
-    "husky": "7.0.4",
+    "husky": "8.0.1",
     "markdownlint-cli": "0.31.1",
     "postcss": "8.4.13",
     "postcss-cli": "9.1.0",
