@@ -72,7 +72,7 @@
     "husky": "8.0.1",
     "markdownlint-cli": "0.31.1",
     "postcss": "8.4.13",
-    "postcss-cli": "9.1.0",
+    "postcss-cli": "10.0.0",
     "postcss-inline-svg": "5.0.0",
     "postcss-loader": "7.0.0",
     "postcss-simple-vars": "6.0.3",
