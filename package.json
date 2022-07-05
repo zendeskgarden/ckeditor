@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.17.10",
-    "@babel/eslint-parser": "^7.17.0",
-    "@babel/preset-react": "^7.16.7",
+    "@babel/eslint-parser": "7.17.0",
+    "@babel/preset-react": "7.16.7",
     "@ckeditor/ckeditor5-basic-styles": "34.1.0",
     "@ckeditor/ckeditor5-block-quote": "34.1.0",
     "@ckeditor/ckeditor5-code-block": "34.1.0",
