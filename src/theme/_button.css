@@ -18,15 +18,15 @@
     color: $ZD-PALETTE-GREY-600;
   }
 
-  &:hover:not(.ck-disabled,.ck-on,.ck-button-save,.ck-button-cancel) {
-    & .ck-button__icon {
-      color: $ZD-PALETTE-GREY-700;
-    }
-  }
-
   &.ck-on {
     & .ck-button__icon {
       color: $ZD-PALETTE-GREY-800;
+    }
+  }
+
+  &:hover:not(.ck-disabled,.ck-on,.ck-button-save,.ck-button-cancel) {
+    & .ck-button__icon {
+      color: $ZD-PALETTE-GREY-700;
     }
   }
 
