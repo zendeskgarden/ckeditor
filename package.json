@@ -45,7 +45,7 @@
     "@ckeditor/ckeditor5-link": "35.2.0",
     "@ckeditor/ckeditor5-list": "35.2.0",
     "@ckeditor/ckeditor5-paragraph": "35.2.0",
-    "@ckeditor/ckeditor5-react": "5.0.1",
+    "@ckeditor/ckeditor5-react": "5.0.2",
     "@ckeditor/ckeditor5-theme-lark": "35.2.0",
     "@ckeditor/ckeditor5-widget": "35.2.0",
     "@storybook/addon-a11y": "6.5.12",
