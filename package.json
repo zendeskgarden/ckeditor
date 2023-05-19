@@ -54,7 +54,7 @@
     "@storybook/manager-webpack5": "6.5.16",
     "@storybook/react": "6.5.16",
     "@zendeskgarden/eslint-config": "32.0.0",
-    "@zendeskgarden/react-theming": "8.63.2",
+    "@zendeskgarden/react-theming": "8.67.0",
     "@zendeskgarden/scripts": "1.4.0",
     "@zendeskgarden/stylelint-config": "19.0.0",
     "@zendeskgarden/svg-icons": "6.33.0",

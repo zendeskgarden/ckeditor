@@ -20,7 +20,7 @@
   --ck-color-base-text: $ZD-PALETTE-GREY-800;
   --ck-color-base-error: $ZD-PALETTE-RED-600;
   --ck-color-focus-border: var(--ck-color-base-focus);
-  --ck-color-focus-outer-shadow: rgba(31, 115, 183, .35); /* BLUE-600 */
+  --ck-color-focus-outer-shadow: var(--ck-color-base-focus);
 
   /* SPACING */
   --ck-spacing-unit: $ZD-SPACE-XXS;
@@ -45,8 +45,13 @@
 
   /* SHADOWS */
   --ck-color-shadow-drop: rgba(23, 73, 77, .15); /* CHROME-600 */
-  --ck-inner-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD inset;
+  --ck-inner-shadow:
+    inset var(--ck-color-base-background) 0 0 0 $ZD-SHADOWWIDTHS-XS,
+    inset var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
   --ck-drop-shadow: var(--ck-color-shadow-drop) 0 20px 30px 0;
+  --ck-focus-outer-shadow:
+    var(--ck-color-base-background) 0 0 0 $ZD-SHADOWWIDTHS-XS,
+    var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
 
   /* WIDGET */
   --ck-widget-outline-thickness: 1px;

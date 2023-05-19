@@ -1,10 +1,6 @@
 /* stylelint-disable custom-property-pattern, selector-not-notation */
 
 .ck.ck-button {
-  &:focus {
-    box-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
-  }
-
   &:focus,
   &:active {
     border-color: transparent;
@@ -14,7 +10,7 @@
     cursor: pointer;
   }
 
-  &:not(.ck-button-save,.ck-button-cancel) .ck-button__icon {
+  &:not(.ck-button-save, .ck-button-cancel) .ck-button__icon {
     color: $ZD-PALETTE-GREY-600;
   }
 
@@ -24,7 +20,7 @@
     }
   }
 
-  &:hover:not(.ck-disabled,.ck-on,.ck-button-save,.ck-button-cancel) {
+  &:hover:not(.ck-disabled, .ck-on, .ck-button-save, .ck-button-cancel) {
     & .ck-button__icon {
       color: $ZD-PALETTE-GREY-700;
     }
