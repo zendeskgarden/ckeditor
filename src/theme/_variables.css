@@ -47,11 +47,11 @@
   --ck-color-shadow-drop: rgba(23, 73, 77, .15); /* CHROME-600 */
   --ck-inner-shadow:
     inset var(--ck-color-base-background) 0 0 0 $ZD-SHADOWWIDTHS-XS,
-    inset var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
+    inset var(--ck-color-focus-border) 0 0 0 $ZD-SHADOWWIDTHS-MD;
   --ck-drop-shadow: var(--ck-color-shadow-drop) 0 20px 30px 0;
   --ck-focus-outer-shadow:
     var(--ck-color-base-background) 0 0 0 $ZD-SHADOWWIDTHS-XS,
-    var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
+    var(--ck-color-focus-border) 0 0 0 $ZD-SHADOWWIDTHS-SM;
 
   /* WIDGET */
   --ck-widget-outline-thickness: 1px;
@@ -62,6 +62,7 @@
   --ck-color-button-default-active-background: rgba(31, 115, 183, .2); /* BLUE-600 */
   --ck-color-button-default-active-shadow: transparent;
   --ck-color-button-default-disabled-background: transparent;
+  --ck-color-button-on-color: $ZD-PALETTE-BLUE-800;
   --ck-color-button-on-background: var(--ck-color-button-default-active-background);
   --ck-color-button-on-hover-background: var(--ck-color-button-default-active-background);
   --ck-color-button-on-active-background: var(--ck-color-button-default-active-background);
