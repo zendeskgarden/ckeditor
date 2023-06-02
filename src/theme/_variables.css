@@ -52,10 +52,10 @@
     inset var(--ck-color-focus-border) 0 0 0 $ZD-SHADOWWIDTHS-MD;
   --ck-focus-outer-shadow:
     var(--ck-color-base-background) 0 0 0 $ZD-SHADOWWIDTHS-XS,
-    var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-SM;
+    var(--ck-color-focus-outer-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
   --ck-focus-disabled-outer-shadow:
     var(--ck-color-base-background) 0 0 0 $ZD-SHADOWWIDTHS-XS,
-    var(--ck-color-focus-disabled-shadow) 0 0 0 $ZD-SHADOWWIDTHS-SM;
+    var(--ck-color-focus-disabled-shadow) 0 0 0 $ZD-SHADOWWIDTHS-MD;
 
   /* WIDGET */
   --ck-widget-outline-thickness: 1px;

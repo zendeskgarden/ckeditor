@@ -18,7 +18,7 @@
     .ck-widget_type-around_show-fake-caret_after) {
     outline-color: transparent !important;
     border-radius: var(--ck-border-radius-small) !important;
-    box-shadow: var(--ck-color-focus-outer-shadow) 0 0 0 var(--ck-spacing-small);
+    box-shadow: var(--ck-focus-outer-shadow);
 
     & hr {
       background-color: var(--ck-color-base-focus);
