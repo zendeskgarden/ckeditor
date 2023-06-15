@@ -4074,13 +4074,14 @@
   resolved "https://registry.yarnpkg.com/@zendeskgarden/eslint-config/-/eslint-config-32.0.0.tgz#a4e49f091e44a26b13aec8ed0d63262eb47bbd1b"
   integrity sha512-U38bQxo0b7iUob3rQ1CdrrJ45ZkNYLfrBXoSbSqJglsqZE+oRjBcbYHEH8tVdbhk/BlMPQF1O1i2SSta5Ate9g==
 
-"@zendeskgarden/react-theming@8.63.2":
-  version "8.63.2"
-  resolved "https://registry.yarnpkg.com/@zendeskgarden/react-theming/-/react-theming-8.63.2.tgz#9f9d26b2a3225adeeed33c62a8e190666b1556c5"
-  integrity sha512-V6CuMZjFnNEa/swamb06M6XiuCbETFfMOF8bwzGzH2SzuVBLgRBmutXyKVE5gANuAdUJ9XHkh4DAYZa8I7htTg==
+"@zendeskgarden/react-theming@8.67.0":
+  version "8.67.0"
+  resolved "https://registry.yarnpkg.com/@zendeskgarden/react-theming/-/react-theming-8.67.0.tgz#9d9201b92f14e003dcc3c38bde76b8062c8d4600"
+  integrity sha512-Vvxek+dqiR1XwDTnqFr22gkzLC+DT1RpfiIJNMp33oXhOqp1GdjaCIaEi+hF4CRHw4fsq0c+2UpqcDFBYoTOCw==
   dependencies:
     "@zendeskgarden/container-focusvisible" "^1.0.0"
     "@zendeskgarden/container-utilities" "^1.0.0"
+    lodash.memoize "^4.1.2"
     polished "^4.0.0"
     prop-types "^15.5.7"
 
