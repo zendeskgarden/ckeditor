@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/zendeskgarden/ckeditor/compare/v0.1.0...v0.1.1) (2023-06-16)
+
+
+### Features
+
+* unify focus styles with new standard ([#90](https://github.com/zendeskgarden/ckeditor/issues/90)) ([78a98c6](https://github.com/zendeskgarden/ckeditor/commit/78a98c6d602668dc8b5e71a190a637f315855052))
+
 ## 0.1.0 (2021-03-03)
 
 
