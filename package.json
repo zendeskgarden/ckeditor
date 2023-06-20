@@ -18,12 +18,11 @@
     "build:storybook": "build-storybook",
     "format": "prettier-package-json --write && yarn format:all --write",
     "format:all": "prettier --loglevel warn '**/*.{js,ts,json,md}' '.storybook/**/*.{js,ts,json,md}' '!CHANGELOG.md' '!dist/**'",
-    "postinstall": "husky install",
     "lint": "yarn lint:js && yarn lint:css && yarn lint:md",
     "lint:css": "stylelint 'src/**/*.css'",
     "lint:js": "eslint src/ .storybook/ --ext js,ts --max-warnings 0",
     "lint:md": "markdownlint README.md src/**/*.md",
-    "prepare": "yarn build",
+    "prepare": "yarn build && husky install",
     "start": "start-storybook -p 6006",
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
     "test": "prettier-package-json --list-different && yarn format:all --check && yarn lint"
