@@ -83,7 +83,7 @@
     "react-is": "18.2.0",
     "standard-version": "9.5.0",
     "styled-components": "5.3.6",
-    "stylelint": "15.2.0",
+    "stylelint": "15.10.1",
     "stylelint-order": "6.0.2",
     "webpack": "5.76.0"
   },
