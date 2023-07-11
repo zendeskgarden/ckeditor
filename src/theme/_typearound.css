@@ -8,9 +8,9 @@
 .ck .ck-widget {
   &.ck-widget_selected {
     &.ck-widget_type-around_show-fake-caret_before,
-		&.ck-widget_type-around_show-fake-caret_after {
+    &.ck-widget_type-around_show-fake-caret_after {
       outline-color: transparent !important;
-		}
+    }
   }
 
   &:not(.ck-widget_selected):hover {
@@ -20,10 +20,7 @@
   & > .ck-widget__type-around > .ck-widget__type-around__fake-caret {
     display: none;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     height: 100%;
   }
 
