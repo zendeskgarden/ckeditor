@@ -27,6 +27,9 @@
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
     "test": "prettier-package-json --list-different && yarn format:all --check && yarn lint"
   },
+  "resolutions": {
+    "ora/strip-ansi": "7.0.0"
+  },
   "devDependencies": {
     "@babel/core": "7.22.8",
     "@babel/eslint-parser": "7.22.9",
