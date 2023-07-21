@@ -1,4 +1,4 @@
-/* stylelint-disable custom-property-pattern */
+/* stylelint-disable custom-property-pattern, declaration-property-value-no-unknown */
 
 .ck-content {
   & blockquote {
