@@ -28,7 +28,7 @@
     "test": "prettier-package-json --list-different && yarn format:all --check && yarn lint"
   },
   "resolutions": {
-    "ora/strip-ansi": "7.0.0"
+    "netlify-cli": "9.16.7"
   },
   "devDependencies": {
     "@babel/core": "7.22.8",
