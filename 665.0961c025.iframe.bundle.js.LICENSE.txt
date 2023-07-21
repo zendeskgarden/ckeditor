@@ -4,6 +4,16 @@ object-assign
 @license MIT
 */
 
+/* istanbul ignore else -- @preserve */
+
+/* istanbul ignore else: This is always true because otherwise it would not register a reducer callback. -- @preserve */
+
+/* istanbul ignore file -- @preserve */
+
+/* istanbul ignore if -- @preserve */
+
+/* istanbul ignore next -- @preserve */
+
 /*!
  * The buffer module from node.js, for the browser.
  *
