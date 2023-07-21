@@ -81,7 +81,7 @@
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
     "standard-version": "9.5.0",
-    "styled-components": "5.3.11",
+    "styled-components": "6.0.4",
     "stylelint": "15.10.2",
     "stylelint-order": "6.0.3",
     "webpack": "5.88.1"
