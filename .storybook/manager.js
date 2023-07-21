@@ -10,6 +10,7 @@ import { addons } from '@storybook/addons';
 import { create } from '@storybook/theming/create';
 
 addons.setConfig({
+  panelPosition: 'bottom',
   theme: create({
     brandTitle: 'Zendesk Garden CKEditor',
     brandUrl: 'https://github.com/zendeskgarden/ckeditor',

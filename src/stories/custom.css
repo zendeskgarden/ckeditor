@@ -3,7 +3,7 @@
 }
 
 /* stylelint-disable-next-line selector-max-id */
-#root {
+#storybook-root {
   background-color: inherit;
 }
 

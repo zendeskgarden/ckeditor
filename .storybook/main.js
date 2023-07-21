@@ -13,22 +13,23 @@ const { iconPlugins } = require('./iconPlugins');
 const { plugins } = require('../postcss.config');
 
 function isCssRule(rule) {
-  return rule.test.toString().indexOf('css') > -1;
+  return rule.test?.toString().indexOf('css') > -1;
 }
 
 function isSvgRule(rule) {
-  return rule.test.toString().indexOf('svg') > -1;
+  return rule.test?.toString().indexOf('svg') > -1;
 }
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {}
+  },
   addons: [
     { name: '@storybook/addon-essentials', options: { actions: false, controls: false } },
     '@storybook/addon-a11y'
   ],
-  core: {
-    builder: 'webpack5'
-  },
   webpackFinal: config => {
     config.module.rules.forEach(rule => {
       if (isCssRule(rule)) {
