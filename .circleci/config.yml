@@ -44,7 +44,7 @@ jobs:
     steps:
       - *attach_workspace
       - run: yarn build:storybook
-      - run: utils/deploy.js
+      - run: utils/deploy.mjs
 
   publish:
     <<: *executor
