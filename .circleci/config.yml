@@ -25,7 +25,6 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: yarn
           cache-version: '{{ .Environment.CACHE_VERSION }}'
       - persist_to_workspace:
           root: *workspace_root
@@ -35,7 +34,7 @@ jobs:
     <<: *executor
     steps:
       - *attach_workspace
-      - run: yarn test
+      - run: npm test
 
   deploy:
     <<: *executor
@@ -43,7 +42,7 @@ jobs:
       NODE_DEBUG: gh-pages
     steps:
       - *attach_workspace
-      - run: yarn build:storybook
+      - run: npm run build:storybook
       - run: utils/deploy.mjs
 
   publish:
