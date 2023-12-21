@@ -2,7 +2,7 @@
   "extends": ["config:base", "group:allNonMajor"],
   "rebaseStalePrs": true,
   "schedule": ["on Monday every 9 weeks of the year starting on the 9th week"],
-  "postUpdateOptions": ["yarnDedupeHighest"],
+  "postUpdateOptions": ["npmDedupe"],
   "packageRules": [
     {
       "matchPackagePatterns": ["^@ckeditor/ckeditor"],

@@ -1,6 +1,7 @@
 {
   "extends": "@zendeskgarden/stylelint-config",
   "rules": {
+    "declaration-block-no-redundant-longhand-properties": null,
     "declaration-no-important": null,
     "no-unknown-custom-properties": null,
     "selector-max-specificity": null
