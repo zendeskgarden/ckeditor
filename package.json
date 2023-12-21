@@ -28,9 +28,6 @@
     "tag": "[ `git rev-parse --abbrev-ref HEAD` = 'main' ] && standard-version --no-verify",
     "test": "prettier-package-json --list-different && npm run -- format:all --check && npm run lint"
   },
-  "resolutions": {
-    "netlify-cli": "9.16.7"
-  },
   "devDependencies": {
     "@babel/core": "7.23.6",
     "@babel/eslint-parser": "7.23.3",
