@@ -52,7 +52,7 @@
     "@storybook/addon-essentials": "7.6.19",
     "@storybook/react": "7.6.19",
     "@storybook/react-webpack5": "7.6.19",
-    "@zendeskgarden/eslint-config": "38.0.0",
+    "@zendeskgarden/eslint-config": "39.0.1",
     "@zendeskgarden/react-theming": "8.76.2",
     "@zendeskgarden/scripts": "2.0.4",
     "@zendeskgarden/stylelint-config": "21.0.0",
