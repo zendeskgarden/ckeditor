@@ -21,15 +21,19 @@ function isSvgRule(rule) {
 }
 
 module.exports = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+
   framework: {
     name: '@storybook/react-webpack5',
     options: {}
   },
+
   addons: [
     { name: '@storybook/addon-essentials', options: { actions: false, controls: false } },
-    '@storybook/addon-a11y'
+    '@storybook/addon-a11y',
+    '@storybook/addon-webpack5-compiler-babel'
   ],
+
   webpackFinal: config => {
     config.module.rules.forEach(rule => {
       if (isCssRule(rule)) {
@@ -82,5 +86,9 @@ module.exports = {
     );
 
     return config;
+  },
+
+  docs: {
+    autodocs: true
   }
 };
