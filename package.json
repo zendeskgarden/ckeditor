@@ -54,7 +54,7 @@
     "@storybook/manager-api": "8.1.11",
     "@storybook/react": "8.1.11",
     "@storybook/react-webpack5": "8.1.11",
-    "@zendeskgarden/eslint-config": "39.0.1",
+    "@zendeskgarden/eslint-config": "42.0.0",
     "@zendeskgarden/react-theming": "8.76.4",
     "@zendeskgarden/scripts": "2.4.0",
     "@zendeskgarden/stylelint-config": "21.0.0",
