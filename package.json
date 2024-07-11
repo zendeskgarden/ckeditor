@@ -21,7 +21,7 @@
     "postinstall": "husky",
     "lint": "npm run lint:js && npm run lint:css && npm run lint:md",
     "lint:css": "stylelint 'src/**/*.css'",
-    "lint:js": "eslint src/ .storybook/ --max-warnings 0",
+    "lint:js": "eslint --max-warnings 0",
     "lint:md": "markdownlint README.md src/**/*.md",
     "prepare": "npm run build",
     "start": "storybook dev -p 6006",
