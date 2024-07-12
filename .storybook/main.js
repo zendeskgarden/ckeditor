@@ -9,8 +9,11 @@
 
 const { styles } = require('@ckeditor/ckeditor5-dev-utils');
 const { CKEditorTranslationsPlugin } = require('@ckeditor/ckeditor5-dev-translations');
+const dotenv = require('dotenv');
 const { iconPlugins } = require('./iconPlugins');
 const { plugins } = require('../postcss.config');
+
+dotenv.config();
 
 function isCssRule(rule) {
   return rule.test?.toString().indexOf('css') > -1;

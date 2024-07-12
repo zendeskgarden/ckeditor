@@ -38,6 +38,8 @@ import {
 import 'ckeditor5/ckeditor5.css';
 import '../theme/theme.css';
 
+const licenseKey = process.env.CKEDITOR_LICENSE_KEY;
+
 /**
  * Add custom tooltip values
  */
@@ -147,7 +149,7 @@ export const Editor = ({ data, onChange, toolbarClassName }) => {
     <CKEditor
       editor={DecoupledEditor}
       data={data}
-      config={{ plugins, toolbar, codeBlock }}
+      config={{ licenseKey, plugins, toolbar, codeBlock }}
       onChange={onChange}
       onReady={onReady}
     />
