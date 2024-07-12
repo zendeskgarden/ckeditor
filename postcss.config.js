@@ -5,7 +5,7 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-const path = require('path');
+const path = require('node:path');
 const postcssSimpleVars = require('postcss-simple-vars');
 const postcssInlineSsvg = require('postcss-inline-svg');
 const { DEFAULT_THEME } = require('@zendeskgarden/react-theming');
