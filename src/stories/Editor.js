@@ -8,30 +8,34 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
-import CodeBlockEditing from '@ckeditor/ckeditor5-code-block/src/codeblockediting';
-import { CodeBlockUI } from './plugins/CodeBlockUI';
-import DecoupledEditor from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
-import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-import Heading from '@ckeditor/ckeditor5-heading/src/heading';
-import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
-import Indent from '@ckeditor/ckeditor5-indent/src/indent';
-import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
-import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-import Link from '@ckeditor/ckeditor5-link/src/link';
-import List from '@ckeditor/ckeditor5-list/src/list';
-import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
-import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
-import Widget from '@ckeditor/ckeditor5-widget/src/widget';
 import { add } from '@ckeditor/ckeditor5-utils/src/translation-service';
-import { getEnvKeystrokeText } from '@ckeditor/ckeditor5-utils/src/keyboard';
+
+import {
+  BlockQuote,
+  Bold,
+  Code,
+  CodeBlockEditing,
+  CodeBlockUI,
+  DecoupledEditor,
+  Essentials,
+  Heading,
+  HorizontalLine,
+  Indent,
+  IndentBlock,
+  Italic,
+  Link,
+  List,
+  Paragraph,
+  Underline,
+  Widget,
+  getEnvKeystrokeText
+} from 'ckeditor5';
 
 /**
  * Garden theme customizations
  */
+import 'ckeditor5/ckeditor5.css';
 import '../theme/theme.css';
 
 /**
