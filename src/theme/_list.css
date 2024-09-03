@@ -1,4 +1,5 @@
-/* stylelint-disable max-line-length, custom-property-pattern, declaration-property-value-no-unknown */
+/* stylelint-disable custom-property-pattern, declaration-property-value-no-unknown, 
+function-no-unknown,  */
 
 .ck.ck-list__item {
   & .ck-button {

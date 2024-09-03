@@ -1,5 +1,3 @@
-/* stylelint-disable custom-property-pattern */
-
 .ck.ck-icon {
   & :not([fill]) {
     fill: inherit !important;
