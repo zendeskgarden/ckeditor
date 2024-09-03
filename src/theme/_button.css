@@ -1,4 +1,4 @@
-/* stylelint-disable custom-property-pattern, selector-not-notation */
+/* stylelint-disable selector-not-notation */
 
 .ck.ck-button {
   &:focus,
