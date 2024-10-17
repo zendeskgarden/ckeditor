@@ -3,12 +3,17 @@
 .ck-content pre {
   margin-block-start: var(--ck-spacing-extra-large);
   margin-block-end: var(--ck-spacing-extra-large);
+  border: none;
   border-radius: var(--ck-border-radius-small);
   background-color: $ZD-PALETTE-GREY-100;
   padding: var(--ck-spacing-large);
   overflow: auto;
   white-space: pre;
   color: var(--ck-color-base-text);
+
+  &::after {
+    display: none;
+  }
 
   & code {
     background-color: inherit;
