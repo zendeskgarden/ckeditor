@@ -1,5 +1,9 @@
 /* stylelint-disable max-nesting-depth, selector-max-compound-selectors,
    custom-property-pattern */
+  
+:root {
+  --ck-dropdown-arrow-size: var(--ck-spacing-extra-large);
+}
 
 @keyframes zd-menu--top-open {
   0% {
@@ -16,7 +20,9 @@
 .ck.ck-dropdown {
   & .ck-button.ck-dropdown__button {
     & .ck-dropdown__arrow {
-      transition: transform .25s ease-in-out 0s, color .25s ease-in-out 0s;
+      transition:
+        transform 0.25s ease-in-out 0s,
+        color 0.25s ease-in-out 0s;
     }
 
     &.ck-on {
@@ -29,12 +35,14 @@
   }
 
   & .ck-dropdown__panel {
-    animation: .2s cubic-bezier(.15, .85, .35, 1.2);
+    animation: 0.2s cubic-bezier(0.15, 0.85, 0.35, 1.2);
     border-radius: var(--ck-border-radius) !important;
 
     &:not(.ck-dropdown__panel-visible) {
       display: inline-block;
-      transition: opacity .2s ease-in-out, .2s visibility 0s linear;
+      transition:
+        opacity 0.2s ease-in-out,
+        0.2s visibility 0s linear;
       visibility: hidden;
       opacity: 0;
     }
@@ -82,7 +90,9 @@
 .ck[dir='rtl'].ck-dropdown {
   & .ck-button.ck-dropdown__button {
     & .ck-dropdown__arrow {
-      transition: transform .25s ease-in-out 0s, color .25s ease-in-out 0s;
+      transition:
+        transform 0.25s ease-in-out 0s,
+        color 0.25s ease-in-out 0s;
     }
 
     &.ck-on {

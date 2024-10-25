@@ -1,14 +1,6 @@
 /* stylelint-disable selector-not-notation */
 
 .ck.ck-button {
-  &:focus,
-  &:active {
-    border-color: transparent;
-  }
-
-  &:not(.ck-disabled) {
-    cursor: pointer;
-  }
 
   &:not(.ck-button-save, .ck-button-cancel) .ck-button__icon {
     color: $ZD-PALETTE-GREY-600;
@@ -24,9 +16,5 @@
     & .ck-button__icon {
       color: $ZD-PALETTE-GREY-700;
     }
-  }
-
-  &.ck-disabled:active {
-    box-shadow: none;
   }
 }

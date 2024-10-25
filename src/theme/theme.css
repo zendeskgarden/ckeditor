@@ -1,16 +1,34 @@
-@import './_variables.css';
+/*!
+ * Copyright Zendesk, Inc.
+ *
+ * Use of this source code is governed under the Apache License, Version 2.0
+ * found at http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@import 'base';
+/* BLOCKQUOTE */
+@import 'blockquote';
+/* CODE */
+@import 'code';
+/* CODE BLOCK */
+@import 'code-block';
+/* BUTTON */
+@import 'button';
+/* HORIZONTAL LINE */
+@import 'horizontal-line';
+/* LINK */
+@import 'link';
+/* LIST */
+@import 'list';
+/* TYPOGRAPHY */
+@import 'typography';
+
+/*
 @import './_button.css';
 @import './_dropdown.css';
-@import './_editor.css';
 @import './_balloon-panel.css';
 @import './_toolbar.css';
-@import './_horizontal-line.css';
-@import './_icons.css';
-@import './_blockquote.css';
 @import './_typography.css';
 @import './_list.css';
-@import './_code.css';
-@import './_code-block.css';
-@import './_link.css';
 @import './_tooltip.css';
-@import './_typearound.css';
+@import './_typearound.css'; */

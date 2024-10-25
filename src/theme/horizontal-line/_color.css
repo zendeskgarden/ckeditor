@@ -1,0 +1,21 @@
+.ck.ck-content .ck-horizontal-line {
+  &.ck-widget_selected:not(
+    .ck-widget_type-around_show-fake-caret_before,
+    .ck-widget_type-around_show-fake-caret_after
+  ) {
+    @apply outline-transparent;
+    @apply shadow-outline;
+
+    & hr {
+      @apply bg-blue-700;
+
+      @apply dark:bg-blue-500;
+    }
+  }
+
+  & hr {
+    @apply bg-grey-300;
+
+    @apply dark:bg-grey-800;
+  }
+}

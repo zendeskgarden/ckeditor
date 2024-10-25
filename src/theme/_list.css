@@ -1,6 +1,12 @@
 /* stylelint-disable custom-property-pattern, declaration-property-value-no-unknown, 
 function-no-unknown,  */
 
+:root {
+  --ck-color-list-button-on-background: inherit;
+  --ck-color-list-button-on-background-focus: var(--ck-color-list-button-hover-background);
+  --ck-color-list-button-on-text: var(--ck-color-base-text);
+}
+
 .ck.ck-list__item {
   & .ck-button {
     position: relative;
@@ -10,9 +16,10 @@ function-no-unknown,  */
       position: absolute;
       top: 0;
       left: 0;
-      transition: opacity .1s ease-in-out;
+      transition: opacity 0.1s ease-in-out;
       opacity: 0;
-      background: no-repeat 50% / var(--ck-spacing-extra-large) svg-load('16/check-lg-stroke.svg', color: $ZD-PALETTE-BLUE-600);
+      background: no-repeat 50% / var(--ck-spacing-extra-large)
+        svg-load('16/check-lg-stroke.svg', color: $ZD-PALETTE-BLUE-600);
       width: calc(var(--ck-spacing-extra-large) * 2);
       height: 100%;
       content: '';

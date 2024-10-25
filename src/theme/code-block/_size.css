@@ -1,0 +1,9 @@
+.ck.ck-content pre {
+  @apply my-4;
+  @apply rounded-sm;
+  @apply p-3;
+
+  & code {
+    @apply p-0;
+  }
+}

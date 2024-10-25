@@ -1,0 +1,21 @@
+:root {
+  --ck-color-button-default-background: transparent;
+  --ck-color-button-default-hover-background: rgba(theme(backgroundColor.blue.700), theme(opacity.8))
+  --ck-color-button-default-hover-background: rgba(theme(backgroundColor.blue.700), theme(opacity.16))
+  --ck-color-button-default-active-shadow: transparent;
+  --ck-color-button-default-disabled-background: transparent;
+  
+  --ck-color-button-on-color: theme(colors.blue.900);
+  --ck-color-button-on-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-hover-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-active-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-active-shadow: transparent;
+  --ck-color-button-on-disabled-background: var(--ck-color-button-default-disabled-background);
+
+  --ck-color-button-save: theme(colors.green.700);
+  --ck-color-button-cancel: theme(colors.red.700);
+}
+
+.ck.ck-button {
+  @apply focus-visible:shadow-outline !important;
+}

@@ -1,9 +1,19 @@
 {
   "extends": "@zendeskgarden/stylelint-config",
   "rules": {
+    "at-rule-empty-line-before": null,
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["apply", "tailwind"] }],
+    "custom-property-empty-line-before": null,
+    "custom-property-pattern": "ck-.+",
     "declaration-block-no-redundant-longhand-properties": null,
     "declaration-no-important": null,
+    "declaration-property-value-no-unknown": [
+      true,
+      { "ignoreProperties": { "background-image": "/svg-load/", "background-size": "/theme/" } }
+    ],
+    "function-no-unknown": [true, { "ignoreFunctions": ["svg-load", "theme"] }],
     "no-unknown-custom-properties": null,
-    "selector-max-specificity": null
+    "selector-max-specificity": null,
+    "value-keyword-case": null
   }
 }

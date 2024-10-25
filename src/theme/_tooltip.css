@@ -1,4 +1,7 @@
-/* stylelint-disable custom-property-pattern */
+:root {
+  --ck-color-tooltip-background: $ZD-PALETTE-KALE-700;
+  --ck-color-tooltip-text: var(--ck-color-base-background);
+}
 
 .ck.ck-tooltip .ck-tooltip__text {
   border-radius: var(--ck-border-radius-small) !important;

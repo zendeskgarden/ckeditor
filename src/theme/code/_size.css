@@ -1,0 +1,6 @@
+.ck.ck-content code {
+  @apply rounded-sm;
+  @apply p-[1.5px];
+  @apply leading-[normal];
+  @apply text-[calc(1em-1px)];
+}

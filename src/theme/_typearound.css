@@ -3,6 +3,11 @@ selector-max-compound-selectors, function-no-unknown */
 
 @import '@ckeditor/ckeditor5-theme-lark/theme/mixins/_focus.css';
 
+/* Hide widget mobile type-around feature */
+.ck.ck-content .ck-widget .ck-widget__type-around__button {
+  @apply hidden;
+}
+
 .ck .ck-widget {
   &.ck-widget_selected {
     &.ck-widget_type-around_show-fake-caret_before,
