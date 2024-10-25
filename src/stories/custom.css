@@ -8,6 +8,7 @@
 }
 
 .ck.ck-editor__editable {
+  border-bottom-color: transparent;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }

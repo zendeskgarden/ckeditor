@@ -7,6 +7,7 @@
 
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useTheme } from 'styled-components';
 
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
@@ -89,6 +90,9 @@ const codeBlock = {
 };
 
 export const Editor = ({ data, onChange, toolbarClassName }) => {
+  const theme = useTheme();
+  const language = theme.rtl ? 'ar' : 'en';
+
   const onReady = editor => {
     /**
      * Apply custom keyboard shortcuts
@@ -105,6 +109,10 @@ export const Editor = ({ data, onChange, toolbarClassName }) => {
      * Attach decoupled toolbar
      */
     const toolbarElement = document.querySelector(`.${toolbarClassName}`);
+
+    if (toolbarElement.hasChildNodes()) {
+      toolbarElement.innerHTML = '';
+    }
 
     toolbarElement.appendChild(editor.ui.view.toolbar.element);
 
@@ -141,9 +149,10 @@ export const Editor = ({ data, onChange, toolbarClassName }) => {
 
   return (
     <CKEditor
+      key={language} // HACK https://github.com/ckeditor/ckeditor5-react/issues/233#issuecomment-1569448103
       editor={DecoupledEditor}
       data={data}
-      config={{ plugins, toolbar, codeBlock }}
+      config={{ language, plugins, toolbar, codeBlock }}
       onChange={onChange}
       onReady={onReady}
     />
