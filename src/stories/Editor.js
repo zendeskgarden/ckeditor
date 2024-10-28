@@ -5,8 +5,8 @@
  * found at http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import React from 'react';
 import { useTheme } from 'styled-components';
 
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
@@ -146,6 +146,10 @@ export const Editor = ({ data, onChange, toolbarClassName }) => {
       writer.setAttribute('spellcheck', 'false', editor.editing.view.document.getRoot());
     });
   };
+
+  useEffect(() => {
+    document.body.dataset.ckColorScheme = theme.colors.base;
+  }, [theme]);
 
   return (
     <CKEditor

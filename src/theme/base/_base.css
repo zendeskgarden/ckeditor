@@ -9,12 +9,25 @@
   @apply focus-visible:outline-none;
 
   & * {
-    @apply transition-none !important;
-
     @apply focus:outline-none !important;
     @apply focus:shadow-none !important;
     @apply focus:border-transparent !important;
 
     @apply focus-visible:outline-none;
   }
+}
+
+.ck.ck-toolbar {
+  @apply p-2;
+
+  & > .ck.ck-toolbar__separator,
+  & > .ck-toolbar__items > .ck.ck-toolbar__separator {
+    @apply my-0;
+    @apply mx-2;
+    @apply h-8;
+  }
+}
+
+.ck.ck-balloon-panel.ck-powered-by-balloon {
+  @apply hidden;
 }

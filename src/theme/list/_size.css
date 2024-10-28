@@ -1,7 +1,3 @@
-/*
- * 1. Prevent padding the very first list item.
- * 2. Restore padding on first list items that are nested.
- */
 .ck.ck-content {
   & ol,
   & ul {

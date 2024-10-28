@@ -1,0 +1,9 @@
+.ck.ck-content .ck-widget.ck-widget_selected {
+  &.ck-widget_type-around_show-fake-caret_before > .ck-widget__type-around > .ck-widget__type-around__fake-caret,
+  &.ck-widget_type-around_show-fake-caret_after > .ck-widget__type-around > .ck-widget__type-around__fake-caret {
+    @apply my-auto;
+    @apply h-full;
+    @apply min-h-4;
+    @apply w-px;
+  }
+}

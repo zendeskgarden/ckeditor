@@ -35,9 +35,10 @@
   @apply dark:shadow-inner-dark;
 }
 
-.ck.ck-toolbar .ck-toolbar__items,
-.ck.ck-toolbar .ck-toolbar__items * {
-  @apply text-inherit !important;
+.ck.ck-toolbar .ck.ck-toolbar__separator {
+  @apply bg-grey-200;
+
+  @apply dark:bg-grey-900;
 }
 
 .ck.ck-icon :not([fill]) {

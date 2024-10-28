@@ -17,5 +17,38 @@
 }
 
 .ck.ck-button {
+  @apply text-grey-700 !important;
+
+  @apply hover:bg-blue-700/8 !important;
+  @apply hover:text-grey-800 !important;
+
   @apply focus-visible:shadow-outline !important;
+
+  @apply active:bg-blue-700/16 !important;
+  @apply active:text-grey-900 !important;
+
+  @apply dark:text-grey-500 !important;
+
+  @apply dark:hover:bg-blue-600/8 !important;
+  @apply dark:hover:text-grey-400 !important;
+
+  @apply dark:focus-visible:shadow-outline-dark !important;
+
+  @apply dark:active:bg-blue-600/16 !important;
+  @apply dark:active:text-grey-300 !important;
+
+  &[aria-pressed="true"] {
+    @apply bg-blue-700/16 !important;
+    @apply text-grey-900 !important;
+
+    @apply dark:bg-blue-600/16 !important;
+    @apply dark:text-grey-300 !important;
+  }
+
+  &[aria-disabled="true"] {
+    @apply bg-transparent !important;
+    @apply text-grey-600 !important;
+
+    @apply dark:text-grey-700 !important;
+  }
 }

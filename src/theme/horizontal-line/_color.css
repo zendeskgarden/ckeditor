@@ -2,15 +2,10 @@
   &.ck-widget_selected:not(
     .ck-widget_type-around_show-fake-caret_before,
     .ck-widget_type-around_show-fake-caret_after
-  ) {
-    @apply outline-transparent;
-    @apply shadow-outline;
+  ) hr {
+    @apply bg-blue-700;
 
-    & hr {
-      @apply bg-blue-700;
-
-      @apply dark:bg-blue-500;
-    }
+    @apply dark:bg-blue-500;
   }
 
   & hr {

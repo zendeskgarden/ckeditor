@@ -66,11 +66,7 @@ const withThemeProvider = (story, context) => {
   const rtl = context.globals.locale === 'rtl';
   const theme = { ...DEFAULT_THEME, colors, rtl };
 
-  return (
-    <ThemeProvider theme={theme}>
-      <div data-ck-color-scheme={theme.colors.base}>{story()}</div>
-    </ThemeProvider>
-  );
+  return <ThemeProvider theme={theme}>{story()}</ThemeProvider>;
 };
 
 export const decorators = [withBedrock, withThemeProvider];

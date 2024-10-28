@@ -20,15 +20,15 @@
 @import 'link';
 /* LIST */
 @import 'list';
+/* TOOLTIP */
+@import 'tooltip';
+/* TYPEAROUND */
+@import 'typearound';
 /* TYPOGRAPHY */
 @import 'typography';
 
 /*
-@import './_button.css';
 @import './_dropdown.css';
 @import './_balloon-panel.css';
-@import './_toolbar.css';
-@import './_typography.css';
 @import './_list.css';
-@import './_tooltip.css';
-@import './_typearound.css'; */
+*/

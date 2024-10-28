@@ -1,4 +1,10 @@
 .ck.ck-button {
+  transition:
+    border-color .25s ease-in-out,
+    box-shadow .1s ease-in-out,
+    background-color .25s ease-in-out,
+    color .25s ease-in-out;
+
   &:not(.ck-disabled) {
     @apply cursor-pointer;
   }
