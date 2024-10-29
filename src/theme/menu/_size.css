@@ -1,0 +1,42 @@
+.ck.ck-toolbar .ck-dropdown {
+  & > .ck-dropdown__button > .ck-dropdown__arrow {
+    @apply size-4;
+  }
+
+  & > .ck-dropdown__panel > .ck-list {
+    @apply p-0;
+
+    @apply first:mt-1;
+    @apply last:mb-1;
+
+    & > .ck-list__item > .ck-button {
+      @apply border-0;
+      @apply py-2;
+      @apply px-9;
+
+      &::before {
+        @apply size-4;
+      }
+
+      &:hover,
+      &:focus-visible {
+        box-shadow: inset theme(borderWidth.3) 0 var(--tw-shadow-color) !important;
+      }
+
+      &.ck-heading_heading1 > .ck-button__label {
+        @apply leading-2xl;
+        @apply text-2xl;
+      }
+
+      &.ck-heading_heading2 > .ck-button__label {
+        @apply leading-xl;
+        @apply text-xl;
+      }
+
+      &.ck-heading_heading3 > .ck-button__label {
+        @apply leading-lg;
+        @apply text-lg;
+      }
+    }
+  }
+}

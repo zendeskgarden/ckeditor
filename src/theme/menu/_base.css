@@ -1,0 +1,103 @@
+@keyframes zd-menu--top-open {
+  0% {
+    transform: translateY(theme(spacing.5));
+    @apply pointer-events-none;
+  }
+}
+
+@keyframes zd-menu--bottom-open {
+  0% {
+    transform: translateY(calc(theme(spacing.5) * -1));
+    @apply pointer-events-auto;
+  }
+}
+
+.ck.ck-toolbar .ck-dropdown {
+  & > .ck-dropdown__button {
+    &[aria-expanded="true"] {
+      @apply rounded;
+    }
+
+    & > .ck-dropdown__arrow {
+      transition:
+        transform 0.25s ease-in-out 0s,
+        color 0.1s ease-in-out 0s;
+    }
+
+    &.ck-on > .ck-dropdown__arrow {
+      transform: rotate(180deg);
+
+      &:where([dir="rtl"] *) {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  & > .ck-dropdown__panel {
+    animation: 0.2s cubic-bezier(0.15, 0.85, 0.35, 1.2);
+    @apply rounded;
+
+    &:not(.ck-dropdown__panel-visible) {
+      @apply inline-block;
+      transition: opacity 0.2s ease-in-out, 0.2s visibility 0s linear;
+      @apply invisible;
+      @apply opacity-0;
+    }
+
+    &.ck-dropdown__panel-visible {
+      @apply visible;
+      @apply opacity-100;
+
+      &.ck-dropdown__panel_ne,
+      &.ck-dropdown__panel_nw {
+        animation-name: zd-menu--top-open;
+      }
+
+      &.ck-dropdown__panel_se,
+      &.ck-dropdown__panel_sw {
+        animation-name: zd-menu--bottom-open;
+      }
+    }
+
+    &.ck-dropdown__panel_ne,
+    &.ck-dropdown__panel_nw {
+      @apply bottom-[calc(100%+theme(spacing.1))];
+    }
+
+    &.ck-dropdown__panel_se,
+    &.ck-dropdown__panel_sw {
+      @apply top-[calc(100%+theme(spacing.1))];
+    }
+
+    & > .ck-list {
+      @apply rounded-none !important;
+
+      & > .ck-list__item > .ck-button {
+        @apply relative;
+        @apply rounded-none !important;
+
+        &::before {
+          transition: opacity 0.1s ease-in-out;
+          @apply absolute;
+          @apply top-3;
+          @apply start-3;
+          @apply opacity-0;
+        }
+
+        &[aria-checked="true"]::before {
+          @apply opacity-100;
+        }
+
+        &.ck-heading_heading1 > .ck-button__label,
+        &.ck-heading_heading2 > .ck-button__label,
+        &.ck-heading_heading3 > .ck-button__label {
+          @apply font-semibold;
+        }
+      }
+    }
+
+    & > .ck-toolbar {
+      @apply rounded !important;
+    }
+  }
+}

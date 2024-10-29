@@ -1,4 +1,5 @@
-.ck.ck-content a {
+.ck.ck-content a,
+.ck.ck-balloon-panel .ck-link-actions > a.ck-button > .ck-button__label {
   @apply text-blue-700;
   @apply dark:text-blue-500;
 

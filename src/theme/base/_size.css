@@ -41,6 +41,17 @@
   @apply text-base;
 }
 
+.ck.ck-toolbar {
+  @apply p-2;
+
+  & > .ck.ck-toolbar__separator,
+  & > .ck-toolbar__items > .ck.ck-toolbar__separator {
+    @apply my-0;
+    @apply mx-2;
+    @apply h-8;
+  }
+}
+
 .ck.ck-toolbar .ck-toolbar__items,
 .ck.ck-toolbar .ck-toolbar__items * {
   font: inherit;
