@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/zendeskgarden/ckeditor/issues"
   },
-  "main": "dist/theme/theme.css",
+  "main": "dist/theme/index.css",
   "files": [
     "dist"
   ],

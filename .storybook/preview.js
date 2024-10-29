@@ -8,6 +8,7 @@
 import { DEFAULT_THEME, ThemeProvider, getColor } from '@zendeskgarden/react-theming';
 import React from 'react';
 import { create } from '@storybook/theming/create';
+import { createGlobalStyle } from 'styled-components';
 
 const DARK_THEME = { ...DEFAULT_THEME, colors: { ...DEFAULT_THEME.colors, base: 'dark' } };
 const DARK = getColor({ theme: DARK_THEME, variable: 'background.subtle' });
@@ -44,6 +45,16 @@ const withBedrock = (story, context) => {
   return story();
 };
 
+const GlobalPreviewStyling = createGlobalStyle`
+  html {
+    background-color: ${p => getColor({ theme: p.theme, variable: 'background.subtle' })};
+  }
+
+  body {
+    background-color: inherit !important;
+  }
+`;
+
 const withThemeProvider = (story, context) => {
   const colors = {
     ...DEFAULT_THEME.colors,
@@ -66,7 +77,12 @@ const withThemeProvider = (story, context) => {
   const rtl = context.globals.locale === 'rtl';
   const theme = { ...DEFAULT_THEME, colors, rtl };
 
-  return <ThemeProvider theme={theme}>{story()}</ThemeProvider>;
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalPreviewStyling />
+      {story()}
+    </ThemeProvider>
+  );
 };
 
 export const decorators = [withBedrock, withThemeProvider];

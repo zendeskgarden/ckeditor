@@ -33,7 +33,7 @@ import { getEnvKeystrokeText } from '@ckeditor/ckeditor5-utils/src/keyboard';
 /**
  * Garden theme customizations
  */
-import '../theme/theme.css';
+import '../theme/index.css';
 
 /**
  * Add custom tooltip values
