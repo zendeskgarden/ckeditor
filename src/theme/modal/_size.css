@@ -6,7 +6,7 @@
   }
 
   &::after {
-    clip-path: polygon(100% 0px, 0px 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
     background-clip: content-box;
   }
 
@@ -17,7 +17,6 @@
     border-width: inherit !important;
   }
 
-  &.ck-balloon-panel_arrow_n::before,
   &.ck-balloon-panel_arrow_n::before,
   &.ck-balloon-panel_arrow_ne::before,
   &.ck-balloon-panel_arrow_nw::before,
@@ -44,7 +43,6 @@
     @apply -bottom-[5.35px];
   }
 
-  &.ck-balloon-panel_arrow_n::before,
   &.ck-balloon-panel_arrow_n::before,
   &.ck-balloon-panel_arrow_ne::before,
   &.ck-balloon-panel_arrow_nw::before,

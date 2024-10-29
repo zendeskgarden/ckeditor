@@ -4,16 +4,26 @@
     "at-rule-empty-line-before": null,
     "at-rule-no-unknown": [true, { "ignoreAtRules": ["apply", "tailwind"] }],
     "custom-property-empty-line-before": null,
-    "custom-property-pattern": "ck-.+",
+    "custom-property-pattern": "(ck|tw)-.+",
     "declaration-block-no-redundant-longhand-properties": null,
     "declaration-no-important": null,
     "declaration-property-value-no-unknown": [
       true,
-      { "ignoreProperties": { "background-image": "/svg-load/", "background-size": "/theme/" } }
+      {
+        "ignoreProperties": {
+          "background-image": "/svg-load/",
+          "background-size": "/theme/",
+          "content": "/svg-load/",
+          "transform": "/theme/"
+        }
+      }
     ],
     "function-no-unknown": [true, { "ignoreFunctions": ["svg-load", "theme"] }],
+    "max-nesting-depth": null,
     "no-unknown-custom-properties": null,
+    "selector-max-compound-selectors": null,
     "selector-max-specificity": null,
+    "selector-not-notation": null,
     "value-keyword-case": null
   }
 }

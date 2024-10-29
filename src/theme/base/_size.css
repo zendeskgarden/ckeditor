@@ -5,6 +5,7 @@
   --ck-font-size-normal: theme(fontSize.base);
   --ck-font-size-big: theme(fontSize.lg);
   --ck-font-size-large: theme(fontSize.xl);
+  /* stylelint-disable-next-line unit-no-unknown */
   --ck-font-size-extra-large: theme(fontSize.2xl);
 
   --ck-icon-size: theme(spacing.4);
