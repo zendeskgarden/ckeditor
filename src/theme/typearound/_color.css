@@ -8,14 +8,13 @@
         @apply bg-grey-900;
 
         @apply dark:bg-white;
-
       }
     }
 
     &:not(
-      .ck-widget_type-around_show-fake-caret_before,
-      .ck-widget_type-around_show-fake-caret_after
-    ) {
+        .ck-widget_type-around_show-fake-caret_before,
+        .ck-widget_type-around_show-fake-caret_after
+      ) {
       @apply outline-transparent;
       @apply shadow-outline;
 

@@ -5,7 +5,7 @@
   &.ck-widget_selected:not(
       .ck-widget_type-around_show-fake-caret_before,
       .ck-widget_type-around_show-fake-caret_after
-  ) {
+    ) {
     @apply rounded-sm;
   }
 

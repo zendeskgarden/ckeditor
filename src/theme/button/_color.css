@@ -1,10 +1,16 @@
 :root {
   --ck-color-button-default-background: transparent;
-  --ck-color-button-default-hover-background: rgba(theme(backgroundColor.blue.700), theme(opacity.8));
-  --ck-color-button-default-active-background: rgba(theme(backgroundColor.blue.700), theme(opacity.16));
+  --ck-color-button-default-hover-background: rgba(
+    theme(backgroundColor.blue.700),
+    theme(opacity.8)
+  );
+  --ck-color-button-default-active-background: rgba(
+    theme(backgroundColor.blue.700),
+    theme(opacity.16)
+  );
   --ck-color-button-default-active-shadow: transparent;
   --ck-color-button-default-disabled-background: transparent;
-  
+
   --ck-color-button-on-color: theme(colors.blue.900);
   --ck-color-button-on-background: var(--ck-color-button-default-active-background);
   --ck-color-button-on-hover-background: var(--ck-color-button-default-active-background);
@@ -43,8 +49,8 @@
   @apply dark:active:bg-blue-600/16 !important;
   @apply dark:active:text-grey-300 !important;
 
-  &[aria-expanded="true"],
-  &[aria-pressed="true"] {
+  &[aria-expanded='true'],
+  &[aria-pressed='true'] {
     @apply bg-blue-700/16 !important;
     @apply text-grey-900 !important;
 
@@ -52,7 +58,7 @@
     @apply dark:text-grey-300 !important;
   }
 
-  &[aria-disabled="true"] {
+  &[aria-disabled='true'] {
     @apply bg-transparent !important;
     @apply text-grey-600 !important;
 

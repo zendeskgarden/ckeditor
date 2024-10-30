@@ -14,7 +14,7 @@
 
 .ck.ck-toolbar .ck-dropdown {
   & > .ck-dropdown__button {
-    &[aria-expanded="true"] {
+    &[aria-expanded='true'] {
       @apply rounded;
     }
 
@@ -27,7 +27,7 @@
     &.ck-on > .ck-dropdown__arrow {
       transform: rotate(180deg);
 
-      &:where([dir="rtl"] *) {
+      &:where([dir='rtl'] *) {
         transform: rotate(-180deg);
       }
     }
@@ -39,7 +39,9 @@
 
     &:not(.ck-dropdown__panel-visible) {
       @apply inline-block;
-      transition: opacity 0.2s ease-in-out, 0.2s visibility 0s linear;
+      transition:
+        opacity 0.2s ease-in-out,
+        0.2s visibility 0s linear;
       @apply invisible;
       @apply opacity-0;
     }
@@ -84,7 +86,7 @@
           @apply opacity-0;
         }
 
-        &[aria-checked="true"]::before {
+        &[aria-checked='true']::before {
           @apply opacity-100;
         }
 

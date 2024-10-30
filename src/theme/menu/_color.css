@@ -23,7 +23,7 @@
       @apply bg-inherit;
 
       & > .ck-list__item > .ck-button {
-        &[aria-checked="true"] {
+        &[aria-checked='true'] {
           @apply bg-transparent;
         }
 
@@ -43,7 +43,7 @@
           content: svg-load('16/check-lg-stroke.svg', color: theme(colors.blue.700));
         }
 
-        &:where([data-ck-color-scheme="dark"] *)::before {
+        &:where([data-ck-color-scheme='dark'] *)::before {
           content: svg-load('16/check-lg-stroke.svg', color: theme(colors.blue.600));
         }
       }
