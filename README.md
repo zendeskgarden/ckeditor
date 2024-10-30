@@ -51,6 +51,13 @@ Then include the theme overrides in your application.
 import '@zendeskgarden/ckeditor';
 ```
 
+### Dark mode
+
+Apply the `data-ck-color-scheme="dark"` attribute to an element (i.e. `<body>`)
+that wraps all of CKEditor's rendered components. This includes the editor
+itself, the toolbar, and the `.ck-body-wrapper` that contains floating elements
+(tooltips, modals, etc.).
+
 ## Contribution
 
 Thanks for your interest in Garden! Community involvement helps make our
