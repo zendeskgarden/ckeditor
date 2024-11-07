@@ -24,6 +24,7 @@ export default {
 };
 
 export const Default = () => {
+  /* eslint-disable n/no-unsupported-features/node-builtins */
   const data = useMemo(() => {
     const storedData = window.localStorage.getItem(EDITOR_LOCAL_STORAGE_KEY);
 
