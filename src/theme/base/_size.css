@@ -1,0 +1,59 @@
+:root {
+  --ck-font-size-base: theme(fontSize.base);
+  --ck-font-size-tiny: theme(fontSize.xs);
+  --ck-font-size-small: theme(fontSize.sm);
+  --ck-font-size-normal: theme(fontSize.base);
+  --ck-font-size-big: theme(fontSize.lg);
+  --ck-font-size-large: theme(fontSize.xl);
+  /* stylelint-disable-next-line unit-no-unknown */
+  --ck-font-size-extra-large: theme(fontSize.2xl);
+
+  --ck-icon-size: theme(spacing.4);
+
+  --ck-spacing-unit: theme(spacing.1);
+  --ck-spacing-extra-large: calc(var(--ck-spacing-unit) * 4);
+  --ck-spacing-large: calc(var(--ck-spacing-unit) * 3);
+  --ck-spacing-standard: calc(var(--ck-spacing-unit) * 2);
+  --ck-spacing-medium: var(--ck-spacing-unit);
+  --ck-spacing-small: calc(var(--ck-spacing-unit) * 0.5);
+  --ck-spacing-tiny: calc(var(--ck-spacing-unit) * 0.25);
+  --ck-spacing-extra-tiny: var(--ck-spacing-tiny);
+
+  --ck-border-radius: theme(borderRadius.DEFAULT);
+  --ck-border-radius-small: theme(borderRadius.sm);
+}
+
+.ck.ck-content {
+  @apply border;
+  @apply py-0;
+  @apply px-4;
+  @apply leading-md;
+  @apply text-base;
+
+  & > {
+    @apply first:mt-4;
+    @apply last:mb-4;
+  }
+}
+
+.ck.ck-content,
+.ck.ck-toolbar {
+  @apply leading-md;
+  @apply text-base;
+}
+
+.ck.ck-toolbar {
+  @apply p-2;
+
+  & > .ck.ck-toolbar__separator,
+  & > .ck-toolbar__items > .ck.ck-toolbar__separator {
+    @apply my-0;
+    @apply mx-2;
+    @apply h-8;
+  }
+}
+
+.ck.ck-toolbar .ck-toolbar__items,
+.ck.ck-toolbar .ck-toolbar__items * {
+  font: inherit;
+}

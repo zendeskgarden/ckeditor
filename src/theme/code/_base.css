@@ -1,0 +1,4 @@
+.ck.ck-content code {
+  @apply font-mono;
+  direction: ltr;
+}

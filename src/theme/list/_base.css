@@ -1,0 +1,6 @@
+.ck.ck-content {
+  & ol,
+  & ul {
+    @apply list-outside;
+  }
+}

@@ -1,0 +1,28 @@
+.ck.ck-content .ck-widget {
+  &.ck-widget_selected {
+    &.ck-widget_type-around_show-fake-caret_before,
+    &.ck-widget_type-around_show-fake-caret_after {
+      @apply outline-transparent;
+
+      & > .ck-widget__type-around > .ck-widget__type-around__fake-caret {
+        @apply bg-grey-900;
+
+        @apply dark:bg-white;
+      }
+    }
+
+    &:not(
+        .ck-widget_type-around_show-fake-caret_before,
+        .ck-widget_type-around_show-fake-caret_after
+      ) {
+      @apply outline-transparent;
+      @apply shadow-outline;
+
+      @apply dark:shadow-outline-dark;
+    }
+  }
+
+  &:not(.ck-widget_selected) {
+    @apply hover:outline-transparent;
+  }
+}

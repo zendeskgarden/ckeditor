@@ -1,0 +1,16 @@
+.ck.ck-content .ck-horizontal-line {
+  @apply my-4;
+  @apply py-1;
+
+  &.ck-widget_selected:not(
+      .ck-widget_type-around_show-fake-caret_before,
+      .ck-widget_type-around_show-fake-caret_after
+    ) {
+    @apply rounded-sm;
+  }
+
+  & hr {
+    @apply m-0;
+    @apply h-[1px];
+  }
+}

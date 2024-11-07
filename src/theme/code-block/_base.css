@@ -1,0 +1,7 @@
+.ck.ck-content pre {
+  @apply border-none;
+  @apply overflow-auto;
+  @apply whitespace-pre;
+
+  @apply after:hidden;
+}

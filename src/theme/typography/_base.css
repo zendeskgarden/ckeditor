@@ -1,0 +1,13 @@
+.ck.ck-content {
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  strong {
+    @apply font-semibold;
+  }
+
+  & u {
+    @apply underline;
+  }
+}

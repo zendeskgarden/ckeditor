@@ -1,0 +1,42 @@
+:root {
+  --ck-color-base-background: theme(backgroundColor.white);
+  --ck-color-base-foreground: theme(backgroundColor.white);
+  --ck-color-base-border: theme(borderColor.grey.300);
+  --ck-color-base-action: theme(colors.green.700);
+  --ck-color-base-focus: theme(colors.blue.700);
+  --ck-color-base-text: theme(colors.grey.900);
+  --ck-color-base-error: theme(colors.red.700);
+
+  --ck-color-focus-border: var(--ck-color-base-focus);
+  --ck-color-focus-outer-shadow: var(--ck-color-base-focus);
+  --ck-color-focus-disabled-shadow: var(--ck-color-base-focus);
+
+  --ck-color-shadow-drop: rgba(theme(colors.grey.1200), theme(opacity.16));
+  --ck-drop-shadow: theme(boxShadow.lg);
+  --ck-inner-shadow: theme(boxShadow.inner);
+  --ck-focus-outer-shadow: theme(boxShadow.outline);
+  --ck-focus-disabled-outer-shadow: theme(boxShadow.outline);
+}
+
+.ck.ck-content,
+.ck.ck-toolbar {
+  @apply border-grey-300;
+  @apply bg-white;
+  @apply text-grey-900;
+
+  @apply dark:border-grey-800;
+  @apply dark:bg-grey-1100;
+  @apply dark:text-white;
+}
+
+.ck.ck-content.ck-focused.ck-editor__editable:not(.ck-editor__nested-editable) {
+  @apply shadow-inner;
+
+  @apply dark:shadow-inner-dark;
+}
+
+.ck.ck-toolbar .ck.ck-toolbar__separator {
+  @apply bg-grey-200;
+
+  @apply dark:bg-grey-900;
+}

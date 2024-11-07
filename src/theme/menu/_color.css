@@ -1,0 +1,52 @@
+.ck.ck-toolbar .ck-dropdown {
+  & > .ck-dropdown__button {
+    & > .ck-dropdown__arrow {
+      @apply text-grey-700;
+
+      @apply text-grey-500;
+    }
+
+    &:hover > .ck-dropdown__arrow,
+    &:focus-visible > .ck-dropdown__arrow {
+      @apply text-inherit;
+    }
+  }
+
+  & > .ck-dropdown__panel {
+    @apply border-grey-300;
+    @apply bg-white;
+
+    @apply dark:border-grey-800;
+    @apply dark:bg-grey-1000;
+
+    & > .ck-list {
+      @apply bg-inherit;
+
+      & > .ck-list__item > .ck-button {
+        &[aria-checked='true'] {
+          @apply bg-transparent;
+        }
+
+        @apply hover:shadow-blue-700;
+        @apply hover:bg-blue-700/8;
+
+        @apply focus-visible:shadow-blue-700;
+        @apply focus-visible:bg-blue-700/8;
+
+        @apply dark:hover:shadow-blue-600;
+        @apply dark:hover:bg-blue-600/8;
+
+        @apply dark:focus-visible:shadow-blue-600;
+        @apply dark:focus-visible:bg-blue-600/8;
+
+        &::before {
+          content: svg-load('16/check-lg-stroke.svg', color: theme(colors.blue.700));
+        }
+
+        &:where([data-ck-color-scheme='dark'] *)::before {
+          content: svg-load('16/check-lg-stroke.svg', color: theme(colors.blue.600));
+        }
+      }
+    }
+  }
+}

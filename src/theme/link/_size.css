@@ -1,0 +1,4 @@
+.ck.ck-balloon-panel .ck-link-actions > a.ck-button > .ck-button__label {
+  @apply leading-[26px];
+  @apply text-base;
+}

@@ -1,0 +1,12 @@
+.ck.ck-content pre {
+  @apply bg-grey-100;
+  @apply text-grey-900;
+
+  @apply dark:bg-grey-1200;
+  @apply dark:text-grey-300;
+
+  & code {
+    @apply bg-inherit;
+    @apply text-inherit;
+  }
+}

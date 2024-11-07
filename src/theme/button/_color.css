@@ -1,0 +1,67 @@
+:root {
+  --ck-color-button-default-background: transparent;
+  --ck-color-button-default-hover-background: rgba(
+    theme(backgroundColor.blue.700),
+    theme(opacity.8)
+  );
+  --ck-color-button-default-active-background: rgba(
+    theme(backgroundColor.blue.700),
+    theme(opacity.16)
+  );
+  --ck-color-button-default-active-shadow: transparent;
+  --ck-color-button-default-disabled-background: transparent;
+
+  --ck-color-button-on-color: theme(colors.blue.900);
+  --ck-color-button-on-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-hover-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-active-background: var(--ck-color-button-default-active-background);
+  --ck-color-button-on-active-shadow: transparent;
+  --ck-color-button-on-disabled-background: var(--ck-color-button-default-disabled-background);
+
+  --ck-color-button-save: theme(colors.green.700);
+  --ck-color-button-cancel: theme(colors.red.700);
+}
+
+.ck.ck-button {
+  @apply text-grey-700 !important;
+
+  @apply dark:text-grey-500 !important;
+
+  &.ck-button_with-text {
+    @apply text-grey-900 !important;
+
+    @apply dark:text-white !important;
+  }
+
+  @apply hover:bg-blue-700/8 !important;
+  @apply hover:text-grey-800 !important;
+
+  @apply focus-visible:shadow-outline !important;
+
+  @apply active:bg-blue-700/16 !important;
+  @apply active:text-grey-900 !important;
+
+  @apply dark:hover:bg-blue-600/8 !important;
+  @apply dark:hover:text-grey-400 !important;
+
+  @apply dark:focus-visible:shadow-outline-dark !important;
+
+  @apply dark:active:bg-blue-600/16 !important;
+  @apply dark:active:text-grey-300 !important;
+
+  &[aria-expanded='true'],
+  &[aria-pressed='true'] {
+    @apply bg-blue-700/16 !important;
+    @apply text-grey-900 !important;
+
+    @apply dark:bg-blue-600/16 !important;
+    @apply dark:text-grey-300 !important;
+  }
+
+  &[aria-disabled='true'] {
+    @apply bg-transparent !important;
+    @apply text-grey-600 !important;
+
+    @apply dark:text-grey-700 !important;
+  }
+}

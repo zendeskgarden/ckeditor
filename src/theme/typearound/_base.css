@@ -1,0 +1,36 @@
+.ck.ck-content .ck-widget {
+  & > .ck-widget__type-around {
+    & > .ck-widget__type-around__button {
+      @apply hidden;
+    }
+
+    & > .ck-widget__type-around__fake-caret {
+      @apply hidden;
+      @apply inset-0;
+    }
+  }
+
+  &.ck-widget_type-around_show-fake-caret_before
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret,
+  &.ck-widget_type-around_show-fake-caret_after
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    @apply block;
+    @apply outline-none;
+  }
+
+  &.ck-widget_type-around_show-fake-caret_before
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    @apply -start-0;
+    @apply right-[unset];
+  }
+
+  &.ck-widget_type-around_show-fake-caret_after
+    > .ck-widget__type-around
+    > .ck-widget__type-around__fake-caret {
+    @apply -end-0;
+    @apply left-[unset];
+  }
+}

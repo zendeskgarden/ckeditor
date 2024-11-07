@@ -1,0 +1,4 @@
+.ck.ck-input + .ck-label {
+  @apply font-sans;
+  @apply font-semibold !important;
+}

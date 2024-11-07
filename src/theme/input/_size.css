@@ -1,0 +1,4 @@
+.ck.ck-input + .ck-label {
+  @apply rounded-sm;
+  @apply text-sm;
+}
