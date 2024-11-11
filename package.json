@@ -21,7 +21,7 @@
     "postinstall": "husky",
     "lint": "npm run lint:js && npm run lint:css && npm run lint:md",
     "lint:css": "stylelint 'src/**/*.css'",
-    "lint:js": "eslint --max-warnings 0",
+    "lint:js": "eslint src/ .storybook/ --max-warnings 0",
     "lint:md": "markdownlint README.md src/**/*.md",
     "prepare": "npm run build",
     "start": "storybook dev --no-version-updates -p 6006",
@@ -30,7 +30,6 @@
     "watch": "npm run build -- --watch"
   },
   "devDependencies": {
-    "ckeditor5": "43.2.0",
     "@babel/core": "7.26.0",
     "@babel/preset-env": "7.26.0",
     "@babel/preset-react": "7.25.9",
@@ -51,6 +50,7 @@
     "@zendeskgarden/svg-icons": "7.3.0",
     "@zendeskgarden/tailwindcss": "4.0.2",
     "babel-loader": "9.2.1",
+    "ckeditor5": "43.2.0",
     "css-loader": "7.1.2",
     "dotenv": "16.4.5",
     "envalid": "8.0.0",
