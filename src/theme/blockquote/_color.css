@@ -1,0 +1,5 @@
+.ck.ck-content blockquote {
+  @apply border-grey-300;
+
+  @apply dark:border-grey-800;
+}

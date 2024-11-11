@@ -1,0 +1,43 @@
+.ck.ck-balloon-panel {
+  &::before,
+  &::after {
+    @apply z-auto !important;
+    border-style: inherit !important;
+  }
+
+  &.ck-balloon-panel_arrow_n::before,
+  &.ck-balloon-panel_arrow_ne::before,
+  &.ck-balloon-panel_arrow_nw::before,
+  &.ck-balloon-panel_arrow_nme::before,
+  &.ck-balloon-panel_arrow_nmw::before,
+  &.ck-balloon-panel_arrow_n::after,
+  &.ck-balloon-panel_arrow_ne::after,
+  &.ck-balloon-panel_arrow_nw::after,
+  &.ck-balloon-panel_arrow_nme::after,
+  &.ck-balloon-panel_arrow_nmw::after {
+    transform: rotate(-135deg);
+  }
+
+  &.ck-balloon-panel_arrow_s::before,
+  &.ck-balloon-panel_arrow_se::before,
+  &.ck-balloon-panel_arrow_sw::before,
+  &.ck-balloon-panel_arrow_sme::before,
+  &.ck-balloon-panel_arrow_smw::before,
+  &.ck-balloon-panel_arrow_s::after,
+  &.ck-balloon-panel_arrow_se::after,
+  &.ck-balloon-panel_arrow_sw::after,
+  &.ck-balloon-panel_arrow_sme::after,
+  &.ck-balloon-panel_arrow_smw::after {
+    transform: rotate(45deg);
+  }
+
+  &.ck-balloon-panel_arrow_w::before,
+  &.ck-balloon-panel_arrow_w::after {
+    transform: rotate(135deg);
+  }
+
+  &.ck-balloon-panel_arrow_e::before,
+  &.ck-balloon-panel_arrow_e::after {
+    transform: rotate(-45deg);
+  }
+}

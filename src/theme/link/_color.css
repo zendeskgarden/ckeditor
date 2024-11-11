@@ -1,0 +1,12 @@
+.ck.ck-content a,
+.ck.ck-balloon-panel .ck-link-actions > a.ck-button > .ck-button__label {
+  @apply text-blue-700;
+  @apply dark:text-blue-500;
+
+  @apply hover:text-blue-800;
+  @apply hover:dark:text-blue-400;
+
+  &.ck-link_selected {
+    @apply bg-transparent;
+  }
+}

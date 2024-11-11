@@ -1,0 +1,24 @@
+.ck.ck-content {
+  & h2 {
+    @apply mb-4;
+    @apply leading-2xl;
+    @apply text-2xl;
+  }
+
+  & h3 {
+    @apply my-4;
+    @apply leading-xl;
+    @apply text-xl;
+  }
+
+  & h4 {
+    @apply my-4;
+    @apply leading-lg;
+    @apply text-lg;
+  }
+
+  & h5,
+  & p {
+    @apply my-4;
+  }
+}

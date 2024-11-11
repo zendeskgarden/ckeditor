@@ -1,0 +1,27 @@
+.ck.ck-input {
+  @apply border-grey-400;
+  @apply bg-white;
+  @apply text-grey-900;
+
+  @apply hover:border-blue-700;
+
+  @apply focus-visible:shadow-outline !important;
+  @apply focus-visible:border-blue-700 !important;
+
+  @apply dark:border-grey-700;
+  @apply dark:bg-grey-1100;
+  @apply dark:text-grey-300;
+
+  @apply dark:hover:border-blue-500;
+
+  @apply dark:focus-visible:shadow-outline-dark !important;
+  @apply dark:focus-visible:border-blue-500 !important;
+
+  & + .ck-label {
+    @apply bg-white !important;
+    @apply text-grey-900;
+
+    @apply dark:bg-grey-1100 !important;
+    @apply dark:text-grey-300;
+  }
+}

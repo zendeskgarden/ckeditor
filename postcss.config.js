@@ -6,45 +6,22 @@
  */
 
 const path = require('node:path');
-const postcssSimpleVars = require('postcss-simple-vars');
+const postcssImport = require('postcss-import');
 const postcssInlineSsvg = require('postcss-inline-svg');
-const { DEFAULT_THEME } = require('@zendeskgarden/react-theming');
-
-function generateVariables(prefix, value, variables = {}) {
-  if (typeof value === 'string' || typeof value === 'number') {
-    return {
-      ...variables,
-      [prefix]: value
-    };
-  }
-
-  if (typeof value === 'object') {
-    return Object.keys(value)
-      .filter(key => {
-        if (key === 'rtl' || key === 'colors' || key === 'components' || key === 'shadows') {
-          return false;
-        }
-
-        return true;
-      })
-      .map(key => generateVariables(`${prefix}-${key.toUpperCase()}`, value[key], variables))
-      .reduce((retVal, values) => {
-        return {
-          ...retVal,
-          ...values
-        };
-      }, variables);
-  }
-
-  throw new Error(`Invalid theme type ${typeof value} for ${prefix}`);
-}
-
-const variables = generateVariables('ZD', DEFAULT_THEME);
+const postcssPresetEnv = require('postcss-preset-env');
+const tailwindcss = require('tailwindcss');
 
 module.exports = {
   plugins: [
-    postcssSimpleVars({
-      variables
+    postcssImport(),
+    tailwindcss({ config: path.join(__dirname, 'tailwind.config.js') }),
+    postcssPresetEnv({
+      stage: 3,
+      features: {
+        'custom-properties': { preserve: false },
+        'nesting-rules': true,
+        'system-ui-font-family': false
+      }
     }),
     postcssInlineSsvg({
       paths: [path.join(__dirname, 'node_modules', '@zendeskgarden', 'svg-icons', 'src')]

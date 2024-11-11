@@ -15,7 +15,7 @@ addons.setConfig({
     brandTitle: 'Zendesk Garden CKEditor',
     brandUrl: 'https://github.com/zendeskgarden/ckeditor',
     brandImage: null,
-    colorSecondary: DEFAULT_THEME.palette.blue[600],
+    colorSecondary: DEFAULT_THEME.palette.blue[700],
     fontBase: DEFAULT_THEME.fonts.system,
     fontCode: DEFAULT_THEME.fonts.mono
   })

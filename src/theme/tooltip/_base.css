@@ -1,0 +1,12 @@
+.ck.ck-balloon-panel.ck-tooltip {
+  @apply font-sans;
+
+  &.ck-balloon-panel_with-arrow::after {
+    transform: rotate(45deg);
+    @apply border-none;
+  }
+
+  & > .ck-tooltip__text {
+    @apply block;
+  }
+}

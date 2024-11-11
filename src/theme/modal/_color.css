@@ -1,0 +1,22 @@
+.ck.ck-balloon-panel {
+  @apply shadow-grey-1200/16;
+  @apply border-grey-300;
+  @apply bg-white;
+
+  @apply dark:shadow-grey-1200/64;
+  @apply dark:border-grey-800;
+  @apply dark:bg-grey-1000;
+
+  &::before {
+    border-color: inherit !important;
+  }
+
+  &::after {
+    border-color: transparent !important;
+  }
+
+  &::before,
+  &::after {
+    @apply bg-inherit;
+  }
+}

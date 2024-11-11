@@ -1,5 +1,0 @@
-.ck.ck-icon {
-  & :not([fill]) {
-    fill: inherit !important;
-  }
-}

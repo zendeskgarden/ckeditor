@@ -1,0 +1,13 @@
+.ck.ck-content code {
+  @apply bg-grey-200;
+  @apply text-grey-900;
+
+  @apply dark:bg-grey-900;
+  @apply dark:text-grey-300;
+}
+
+.ck.ck-content .ck-code_selected {
+  @apply bg-grey-200;
+
+  @apply dark:bg-grey-900;
+}

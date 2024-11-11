@@ -1,0 +1,4 @@
+.ck.ck-content blockquote {
+  @apply overflow-hidden;
+  font-style: inherit;
+}

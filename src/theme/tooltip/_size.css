@@ -1,0 +1,60 @@
+.ck.ck-balloon-panel.ck-tooltip {
+  box-shadow: 0 theme(spacing.1) theme(spacing.2) 0 var(--tw-shadow-color);
+  @apply rounded-sm;
+  @apply h-5;
+  @apply p-0;
+
+  &.ck-balloon-panel_with-arrow::after {
+    @apply w-[10.49px];
+    @apply h-[10.49px];
+  }
+
+  &.ck-balloon-panel_arrow_n::after,
+  &.ck-balloon-panel_arrow_ne::after,
+  &.ck-balloon-panel_arrow_nw::after,
+  &.ck-balloon-panel_arrow_nme::after,
+  &.ck-balloon-panel_arrow_nmw::after {
+    @apply top-[-4.94px];
+  }
+
+  &.ck-balloon-panel_arrow_s::after,
+  &.ck-balloon-panel_arrow_se::after,
+  &.ck-balloon-panel_arrow_sw::after,
+  &.ck-balloon-panel_arrow_sme::after,
+  &.ck-balloon-panel_arrow_smw::after {
+    @apply bottom-[-4.94px];
+  }
+
+  &.ck-balloon-panel_arrow_n::after,
+  &.ck-balloon-panel_arrow_ne::after,
+  &.ck-balloon-panel_arrow_nw::after,
+  &.ck-balloon-panel_arrow_nme::after,
+  &.ck-balloon-panel_arrow_nmw::after,
+  &.ck-balloon-panel_arrow_s::after,
+  &.ck-balloon-panel_arrow_se::after,
+  &.ck-balloon-panel_arrow_sw::after,
+  &.ck-balloon-panel_arrow_sme::after,
+  &.ck-balloon-panel_arrow_smw::after {
+    @apply -ml-[5.245px] !important;
+  }
+
+  &.ck-balloon-panel_arrow_e::after {
+    @apply right-[-4.94px];
+  }
+
+  &.ck-balloon-panel_arrow_w::after {
+    @apply left-[-4.94px];
+  }
+
+  &.ck-balloon-panel_arrow_e::after,
+  &.ck-balloon-panel_arrow_w::after {
+    @apply -mt-[5.245px] !important;
+  }
+
+  & > .ck-tooltip__text {
+    @apply -mt-px;
+    @apply px-3;
+    @apply leading-md;
+    @apply text-sm;
+  }
+}
