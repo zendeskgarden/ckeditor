@@ -35,6 +35,8 @@ import { getEnvKeystrokeText } from '@ckeditor/ckeditor5-utils/src/keyboard';
  */
 import '../theme/index.css';
 
+const licenseKey = process.env.CKEDITOR_LICENSE_KEY;
+
 /**
  * Add custom tooltip values
  */
@@ -156,7 +158,7 @@ export const Editor = ({ data, onChange, toolbarClassName }) => {
       key={language} // HACK https://github.com/ckeditor/ckeditor5-react/issues/233#issuecomment-1569448103
       editor={DecoupledEditor}
       data={data}
-      config={{ language, plugins, toolbar, codeBlock }}
+      config={{ licenseKey, language, plugins, toolbar, codeBlock }}
       onChange={onChange}
       onReady={onReady}
     />
