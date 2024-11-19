@@ -8,7 +8,7 @@
 /* eslint-disable require-unicode-regexp */
 
 const { styles } = require('@ckeditor/ckeditor5-dev-utils');
-const CKEditorWebpackPlugin = require('@ckeditor/ckeditor5-dev-webpack-plugin');
+const { CKEditorTranslationsPlugin } = require('@ckeditor/ckeditor5-dev-translations');
 const dotenv = require('dotenv');
 const { iconPlugins } = require('./iconPlugins');
 const { plugins } = require('../postcss.config');
@@ -81,7 +81,7 @@ module.exports = {
     );
 
     config.plugins.unshift(
-      new CKEditorWebpackPlugin({
+      new CKEditorTranslationsPlugin({
         language: 'en',
         buildAllTranslationsToSeparateFiles: true
       }),
