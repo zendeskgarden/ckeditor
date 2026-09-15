@@ -51,7 +51,7 @@
     "@ckeditor/ckeditor5-widget": "41.4.2",
     "@storybook/addon-a11y": "8.4.2",
     "@storybook/addon-essentials": "8.4.2",
-    "@storybook/addon-webpack5-compiler-babel": "3.0.3",
+    "@storybook/addon-webpack5-compiler-babel": "4.0.1",
     "@storybook/manager-api": "8.4.2",
     "@storybook/react": "8.4.2",
     "@storybook/react-webpack5": "8.4.2",
